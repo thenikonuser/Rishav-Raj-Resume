@@ -1,0 +1,110 @@
+{
+  "neeli_nazakat": [
+    "assets/portfolio/neeli_nazakat/neeli_nazakat_1.jpg",
+    "assets/portfolio/neeli_nazakat/neeli_nazakat_2.png",
+    "assets/portfolio/neeli_nazakat/neeli_nazakat_3.jpg",
+    "assets/portfolio/neeli_nazakat/neeli_nazakat_4.jpg",
+    "assets/portfolio/neeli_nazakat/neeli_nazakat_5.jpg"
+  ],
+  "radhika_silks": [
+    "assets/portfolio/radhika_silks/radhika_silks_1.jpg",
+    "assets/portfolio/radhika_silks/radhika_silks_2.png",
+    "assets/portfolio/radhika_silks/radhika_silks_3.jpg",
+    "assets/portfolio/radhika_silks/radhika_silks_4.jpg",
+    "assets/portfolio/radhika_silks/radhika_silks_5.jpg"
+  ],
+  "azorte_reliance": [
+    "assets/portfolio/azorte_reliance/azorte_reliance_1.png",
+    "assets/portfolio/azorte_reliance/azorte_reliance_2.png",
+    "assets/portfolio/azorte_reliance/azorte_reliance_3.png"
+  ],
+  "sarwan_silk": [
+    "assets/portfolio/sarwan_silk/sarwan_silk_1.jpg",
+    "assets/portfolio/sarwan_silk/sarwan_silk_2.png",
+    "assets/portfolio/sarwan_silk/sarwan_silk_3.jpg",
+    "assets/portfolio/sarwan_silk/sarwan_silk_4.jpg",
+    "assets/portfolio/sarwan_silk/sarwan_silk_5.jpg"
+  ],
+  "retro_rachna": [
+    "assets/portfolio/retro_rachna/retro_rachna_1.jpg",
+    "assets/portfolio/retro_rachna/retro_rachna_2.png",
+    "assets/portfolio/retro_rachna/retro_rachna_3.jpg",
+    "assets/portfolio/retro_rachna/retro_rachna_4.jpg",
+    "assets/portfolio/retro_rachna/retro_rachna_5.jpg"
+  ],
+  "pragya_singh": [
+    "assets/portfolio/pragya_singh/pragya_singh_1.jpg",
+    "assets/portfolio/pragya_singh/pragya_singh_2.png",
+    "assets/portfolio/pragya_singh/pragya_singh_3.jpg",
+    "assets/portfolio/pragya_singh/pragya_singh_4.jpg",
+    "assets/portfolio/pragya_singh/pragya_singh_5.jpg"
+  ],
+  "commercial_stills": [
+    "assets/portfolio/commercial_stills/commercial_stills_1.png",
+    "assets/portfolio/commercial_stills/commercial_stills_2.png",
+    "assets/portfolio/commercial_stills/commercial_stills_3.png"
+  ],
+  "priyanka_shantanu": [
+    "assets/portfolio/priyanka_shantanu/priyanka_shantanu_1.jpg",
+    "assets/portfolio/priyanka_shantanu/priyanka_shantanu_2.png",
+    "assets/portfolio/priyanka_shantanu/priyanka_shantanu_3.jpg",
+    "assets/portfolio/priyanka_shantanu/priyanka_shantanu_4.jpg",
+    "assets/portfolio/priyanka_shantanu/priyanka_shantanu_5.jpg"
+  ],
+  "somy_amit": [
+    "assets/portfolio/somy_amit/somy_amit_1.jpg",
+    "assets/portfolio/somy_amit/somy_amit_2.png",
+    "assets/portfolio/somy_amit/somy_amit_3.jpg",
+    "assets/portfolio/somy_amit/somy_amit_4.jpg",
+    "assets/portfolio/somy_amit/somy_amit_5.jpg"
+  ],
+  "ankita_rishabh": [
+    "assets/portfolio/ankita_rishabh/ankita_rishabh_1.jpg",
+    "assets/portfolio/ankita_rishabh/ankita_rishabh_2.png",
+    "assets/portfolio/ankita_rishabh/ankita_rishabh_3.jpg",
+    "assets/portfolio/ankita_rishabh/ankita_rishabh_4.jpg",
+    "assets/portfolio/ankita_rishabh/ankita_rishabh_5.jpg"
+  ],
+  "ankita_ankit": [
+    "assets/portfolio/ankita_ankit/ankita_ankit_1.jpg",
+    "assets/portfolio/ankita_ankit/ankita_ankit_2.png",
+    "assets/portfolio/ankita_ankit/ankita_ankit_3.jpg",
+    "assets/portfolio/ankita_ankit/ankita_ankit_4.jpg",
+    "assets/portfolio/ankita_ankit/ankita_ankit_5.jpg"
+  ],
+  "bhawana_raj": [
+    "assets/portfolio/bhawana_raj/bhawana_raj_1.jpg",
+    "assets/portfolio/bhawana_raj/bhawana_raj_2.png",
+    "assets/portfolio/bhawana_raj/bhawana_raj_3.jpg",
+    "assets/portfolio/bhawana_raj/bhawana_raj_4.jpg",
+    "assets/portfolio/bhawana_raj/bhawana_raj_5.jpg"
+  ],
+  "bliss_moments": [
+    "assets/portfolio/bliss_moments/bliss_moments_1.png",
+    "assets/portfolio/bliss_moments/bliss_moments_2.png",
+    "assets/portfolio/bliss_moments/bliss_moments_3.jpg",
+    "assets/portfolio/bliss_moments/bliss_moments_4.jpg",
+    "assets/portfolio/bliss_moments/bliss_moments_5.jpg"
+  ],
+  "weddings_main": [
+    "assets/portfolio/weddings_main/weddings_main_1.jpg",
+    "assets/portfolio/weddings_main/weddings_main_2.png",
+    "assets/portfolio/weddings_main/weddings_main_3.jpg",
+    "assets/portfolio/weddings_main/weddings_main_4.jpg",
+    "assets/portfolio/weddings_main/weddings_main_5.jpg"
+  ],
+  "pre_weddings_main": [
+    "assets/portfolio/pre_weddings_main/pre_weddings_main_1.jpg",
+    "assets/portfolio/pre_weddings_main/pre_weddings_main_2.png",
+    "assets/portfolio/pre_weddings_main/pre_weddings_main_3.jpg",
+    "assets/portfolio/pre_weddings_main/pre_weddings_main_4.jpg",
+    "assets/portfolio/pre_weddings_main/pre_weddings_main_5.jpg"
+  ],
+  "fashion_main": [
+    "assets/portfolio/fashion_main/fashion_main_1.jpg",
+    "assets/portfolio/fashion_main/fashion_main_2.png",
+    "assets/portfolio/fashion_main/fashion_main_3.jpg",
+    "assets/portfolio/fashion_main/fashion_main_4.jpg",
+    "assets/portfolio/fashion_main/fashion_main_5.jpg"
+  ]
+}

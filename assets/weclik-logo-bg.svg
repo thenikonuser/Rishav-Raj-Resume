@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap');
+      
+      .bg-rect {
+        fill: #F5F2EB;
+        rx: 80px;
+        ry: 80px;
+      }
+      
+      .monogram-w {
+        font-family: 'Playfair Display', serif;
+        font-size: 165px;
+        font-weight: 400;
+        fill: #2C2C2B;
+        text-anchor: middle;
+      }
+      
+      .monogram-c {
+        font-family: 'Playfair Display', serif;
+        font-size: 165px;
+        font-weight: 400;
+        fill: #2C2C2B;
+        text-anchor: middle;
+      }
+      
+      .wordmark {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 50px;
+        fill: #2C2C2B;
+        letter-spacing: 0.16em;
+        text-anchor: middle;
+      }
+      
+      .subtitle {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        fill: #2C2C2B;
+        letter-spacing: 0.16em;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect class="bg-rect" width="500" height="500" />
+
+  <g id="logo-content">
+    <!-- Monogram WC -->
+    <!-- 'C' is rendered first, 'W' is layered on top -->
+    <g id="monogram" transform="translate(0, 45)">
+      <text x="290" y="195" class="monogram-c">C</text>
+      <text x="215" y="185" class="monogram-w">W</text>
+    </g>
+
+    <!-- Wordmark WECLIK -->
+    <text x="256" y="340" class="wordmark">WECLIK</text>
+
+    <!-- Subtitle PHOTOGRAPHY | CINEMATOGRAPHY -->
+    <text x="254" y="380" class="subtitle">PHOTOGRAPHY | CINEMATOGRAPHY</text>
+  </g>
+</svg>

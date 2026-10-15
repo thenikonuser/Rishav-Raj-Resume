@@ -1,0 +1,2532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishav Raj — Film-Negative Resume & Portfolio | WECLIK (weclik.in)</title>
+  <meta name="description" content="Official Portfolio & Interactive Film-Negative Resume of Rishav Raj. Photographer, Creative Director & Co-Founder of WECLIK (weclik.in). Luxury Weddings, Fashion, Documentary & Commercial Production in Mumbai.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* www.weclik.in Official Brand Palette */
+      --bg-ivory: #F8F5EC;
+      --bg-canvas: #F8F5EC;
+      --bg-surface: #FFFFFF;
+      --bg-surface-warm: #F4EFE6;
+      --bg-card: #FFFFFF;
+      --bg-card-muted: #F5F0E6;
+
+      /* Primary Typographic & Brand Colors */
+      --primary-olive: #2E2F1E;
+      --primary-dark: #100B0B;
+      --text-main: #100B0B;
+      --text-body: #38342B;
+      --text-muted: #635C4E;
+      --text-dim: #7B6F5A;
+      --text-light: #F8F5EC;
+
+      /* Muted Gold & Signature Accents from weclik.in */
+      --accent-gold: #A8895E;
+      --accent-gold-dark: #8C7046;
+      --accent-gold-hover: #96794D;
+      --accent-pale-gold: #C9B896;
+      --accent-sunset-gold: #E6B574;
+      --accent-amber: #8C7046; /* maps to rich brand gold for high contrast on light canvas */
+      --accent-warm: #100B0B;
+      --accent-terracotta: #C96F4E;
+      --accent-sage: #8A9470;
+      --neutral-warm-beige: #D7C9B4;
+
+      /* Borders, Cards & Dividers */
+      --border-subtle: #E2DACB;
+      --border-card: #DCD3C3;
+      --border-gold: #C9B896;
+
+      /* Film Negative Components (High-contrast 35mm physical film negative elements) */
+      --film-bg: #141411;
+      --film-card: #191915;
+      --film-border: #2D2B24;
+      --film-sprocket: #090907;
+      --film-text: #F8F5EC;
+      --film-text-muted: #D7C9B4;
+      --film-gold: #E6B574;
+
+      /* Typography: Authentic weclik.in pairing */
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'Space Mono', Menlo, Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Native right-click is fully allowed and celebrated across the entire portfolio */
+    html, body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      overflow-x: hidden;
+      line-height: 1.6;
+      user-select: text;
+      -webkit-user-select: text;
+    }
+
+    body {
+      background-image: 
+        radial-gradient(circle at 12% 14%, rgba(168, 137, 94, 0.05) 0%, transparent 45%),
+        radial-gradient(circle at 88% 82%, rgba(46, 47, 30, 0.04) 0%, transparent 45%);
+    }
+
+    /* Film grain texture */
+    .film-grain {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.015;
+      background: repeating-linear-gradient(0deg, #100B0B, #100B0B 1px, transparent 1px, transparent 2px);
+    }
+
+    /* Header Nav */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 74px;
+      padding: 0 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      background: rgba(248, 245, 236, 0.94);
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(46, 47, 30, 0.04);
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: var(--primary-olive);
+    }
+
+    .brand-logo-svg {
+      width: 40px;
+      height: 40px;
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(46, 47, 30, 0.08);
+    }
+
+    .brand-logo-svg svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .brand-text-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      font-size: 1.18rem;
+      color: var(--primary-olive);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-domain-badge {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      background: rgba(168, 137, 94, 0.12);
+      color: var(--accent-gold-dark);
+      border: 1px solid rgba(168, 137, 94, 0.35);
+      padding: 2px 8px;
+      border-radius: 3px;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+    }
+
+    .brand-tagline {
+      font-family: var(--font-mono);
+      font-size: 0.64rem;
+      color: var(--text-dim);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    nav {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    nav a:hover, nav a.active {
+      color: var(--primary-olive);
+    }
+
+    nav a:hover::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 1.5px;
+      background: var(--accent-gold);
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn-action {
+      background: transparent;
+      color: var(--primary-olive);
+      border: 1px solid var(--border-gold);
+      padding: 8px 18px;
+      font-size: 0.76rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn-action:hover {
+      background: var(--primary-olive);
+      color: var(--bg-ivory);
+      border-color: var(--primary-olive);
+    }
+
+    .btn-gold {
+      background: var(--primary-olive);
+      color: var(--bg-ivory);
+      font-weight: 600;
+      border-color: var(--primary-olive);
+    }
+
+    .btn-gold:hover {
+      background: var(--accent-gold);
+      color: #FFFFFF;
+      border-color: var(--accent-gold);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 60px 60px;
+      max-width: 1400px;
+      margin: 0 auto;
+      gap: 60px;
+    }
+
+    .hero-content {
+      flex: 1.25;
+    }
+
+    .hero-tag {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent-gold-dark);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+    }
+
+    .hero-tag::before {
+      content: "";
+      width: 16px;
+      height: 2px;
+      background: var(--accent-gold);
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: 4.4rem;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      color: var(--primary-dark);
+    }
+
+    .hero-role {
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      letter-spacing: 0.12em;
+      color: var(--text-dim);
+      margin-bottom: 22px;
+      font-weight: 600;
+    }
+
+    .hero-bio {
+      color: var(--text-body);
+      font-size: 1.05rem;
+      max-width: 620px;
+      margin-bottom: 30px;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+
+    .hero-bio strong {
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+      max-width: 620px;
+      margin-bottom: 36px;
+    }
+
+    .stat-number {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--primary-olive);
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 2px;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-visual {
+      flex: 0.95;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    /* Film Card Frame (High-contrast 35mm physical film negative slide on ivory canvas) */
+    .film-frame-hero {
+      position: relative;
+      background: var(--film-bg);
+      padding: 22px 18px;
+      border: 1px solid var(--film-border);
+      box-shadow: 0 25px 60px rgba(46, 47, 30, 0.22);
+      max-width: 420px;
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .film-sprockets-side {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding: 0 4px;
+    }
+
+    .sprocket-hole {
+      width: 18px;
+      height: 12px;
+      background: var(--film-sprocket);
+      border: 1px solid #38362d;
+      border-radius: 3px;
+    }
+
+    .hero-image-wrap {
+      aspect-ratio: 4/5;
+      background: #181815;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #38362d;
+      border-radius: 2px;
+    }
+
+    .hero-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      filter: contrast(1.06);
+      transition: filter 0.5s ease, transform 0.6s ease;
+    }
+
+    .film-frame-hero:hover .hero-image-wrap img {
+      transform: scale(1.02);
+    }
+
+    .hero-portrait-badge {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(20, 20, 17, 0.88);
+      backdrop-filter: blur(8px);
+      padding: 6px 12px;
+      border-radius: 3px;
+      border: 1px solid rgba(230, 181, 116, 0.35);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--accent-sunset-gold);
+      letter-spacing: 0.08em;
+    }
+
+    .film-meta-bar {
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--accent-sunset-gold);
+      letter-spacing: 0.12em;
+    }
+
+    /* SECTION HEADERS */
+    .section-header {
+      padding: 90px 60px 30px;
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 30px;
+    }
+
+    .section-title-wrap h2 {
+      font-family: var(--font-serif);
+      font-size: 2.6rem;
+      letter-spacing: 0.03em;
+      color: var(--primary-dark);
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+    }
+
+    .section-index {
+      font-family: var(--font-mono);
+      font-size: 1.05rem;
+      color: var(--accent-gold-dark);
+      font-weight: 600;
+    }
+
+    .section-subtitle {
+      color: var(--text-dim);
+      font-size: 0.82rem;
+      margin-top: 6px;
+      font-family: var(--font-mono);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    /* 02. FILM NEGATIVE STRIP CAROUSEL */
+    .timeline-container {
+      position: relative;
+      padding: 10px 0 60px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .film-strip-wrapper {
+      background: var(--film-bg);
+      border-top: 2px solid var(--film-border);
+      border-bottom: 2px solid var(--film-border);
+      padding: 18px 0;
+      box-shadow: 0 14px 45px rgba(46, 47, 30, 0.18);
+      position: relative;
+    }
+
+    .sprocket-rail {
+      display: flex;
+      gap: 28px;
+      padding: 0 40px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      opacity: 0.75;
+    }
+
+    .sprocket-rail.bottom {
+      margin-top: 12px;
+      margin-bottom: 0;
+    }
+
+    .sprocket {
+      width: 24px;
+      height: 14px;
+      background: var(--film-sprocket);
+      border: 1px solid #38362d;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    .film-track {
+      display: flex;
+      gap: 22px;
+      padding: 0 60px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent-gold) #1c1c18;
+      -webkit-overflow-scrolling: touch;
+      cursor: grab;
+    }
+
+    .film-track:active {
+      cursor: grabbing;
+    }
+
+    .film-track::-webkit-scrollbar {
+      height: 6px;
+    }
+    .film-track::-webkit-scrollbar-track {
+      background: #141411;
+    }
+    .film-track::-webkit-scrollbar-thumb {
+      background: var(--accent-gold);
+      border-radius: 3px;
+    }
+
+    .film-frame-card {
+      min-width: 320px;
+      max-width: 330px;
+      background: var(--film-card);
+      border: 1px solid #2e2c24;
+      padding: 14px;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      border-radius: 2px;
+    }
+
+    .film-frame-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent-gold);
+      box-shadow: 0 16px 36px rgba(168, 137, 94, 0.28);
+    }
+
+    .frame-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent-sunset-gold);
+      margin-bottom: 10px;
+      letter-spacing: 0.08em;
+    }
+
+    .frame-thumb {
+      width: 100%;
+      height: 200px;
+      background: #1c1c18;
+      border: 1px solid #38362d;
+      overflow: hidden;
+      position: relative;
+      border-radius: 2px;
+    }
+
+    .frame-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(0.9) contrast(1.08);
+      transition: transform 0.6s ease;
+    }
+
+    .film-frame-card:hover .frame-thumb img {
+      transform: scale(1.05);
+      filter: saturate(1.1);
+    }
+
+    .frame-badge-role {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(20, 20, 17, 0.88);
+      backdrop-filter: blur(6px);
+      color: #FFFFFF;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      padding: 3px 8px;
+      border-radius: 2px;
+      border: 1px solid rgba(230, 181, 116, 0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .frame-content {
+      padding-top: 14px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .frame-year {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent-sunset-gold);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .frame-heading {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .frame-desc {
+      font-size: 0.84rem;
+      color: #D7C9B4;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .frame-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--accent-sunset-gold);
+      border-top: 1px dashed #38362d;
+      padding-top: 8px;
+    }
+
+    /* 03. CHAPTER DETAIL MODAL */
+    .modal-backdrop {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(16, 11, 11, 0.8);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .modal-backdrop.active {
+      display: flex;
+    }
+
+    .modal-window {
+      background: var(--bg-ivory);
+      color: var(--text-main);
+      border: 1px solid var(--accent-gold);
+      width: 100%;
+      max-width: 980px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 4px;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+      position: relative;
+      animation: modalFadeUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes modalFadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .modal-header-film {
+      background: var(--primary-olive);
+      color: var(--accent-sunset-gold);
+      padding: 16px 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--accent-gold);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+    }
+
+    .modal-close-btn {
+      background: transparent;
+      border: none;
+      color: var(--neutral-warm-beige);
+      font-size: 1.8rem;
+      cursor: pointer;
+      line-height: 1;
+      transition: color 0.2s;
+    }
+
+    .modal-close-btn:hover {
+      color: #FFFFFF;
+    }
+
+    .modal-body {
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 40px;
+    }
+
+    .modal-title {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      color: var(--primary-dark);
+      line-height: 1.15;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .modal-subtitle {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--accent-gold-dark);
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+
+    .modal-text {
+      color: var(--text-body);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    .modal-section-title {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--primary-olive);
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .modal-list {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .modal-list li {
+      font-size: 0.88rem;
+      color: var(--text-body);
+      margin-bottom: 9px;
+      padding-left: 18px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .modal-list li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--accent-gold);
+    }
+
+    .gear-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .gear-pill {
+      background: var(--bg-surface-warm);
+      border: 1px solid var(--border-card);
+      color: var(--primary-olive);
+      padding: 5px 12px;
+      border-radius: 3px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .modal-gallery-preview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .modal-gallery-preview img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border: 1px solid var(--border-card);
+      border-radius: 2px;
+    }
+
+    /* 04. SELECTED WORKS / CONTACT SHEET */
+    .contact-sheet-section {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 10px 60px 80px;
+    }
+
+    .filter-bar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 34px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-card);
+      color: var(--text-muted);
+      padding: 8px 20px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: all 0.2s;
+      font-weight: 500;
+      box-shadow: 0 2px 6px rgba(46, 47, 30, 0.04);
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--primary-olive);
+      color: var(--bg-ivory);
+      border-color: var(--primary-olive);
+      font-weight: 600;
+    }
+
+    .contact-sheet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 28px;
+    }
+
+    .contact-cell {
+      background: var(--bg-surface);
+      padding: 14px;
+      border: 1px solid var(--border-card);
+      position: relative;
+      transition: all 0.3s;
+      border-radius: 4px;
+      box-shadow: 0 4px 18px rgba(46, 47, 30, 0.05);
+    }
+
+    .contact-cell:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-5px);
+      box-shadow: 0 16px 32px rgba(46, 47, 30, 0.12);
+    }
+
+    .cell-film-label {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--accent-gold-dark);
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+    }
+
+    .cell-media {
+      aspect-ratio: 4/5;
+      background: var(--bg-surface-warm);
+      overflow: hidden;
+      margin-bottom: 12px;
+      border: 1px solid var(--border-subtle);
+      border-radius: 2px;
+    }
+
+    .cell-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .contact-cell:hover .cell-media img {
+      transform: scale(1.04);
+    }
+
+    .cell-title {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--primary-dark);
+      line-height: 1.25;
+      margin-top: 4px;
+      font-weight: 700;
+    }
+
+    .cell-tag {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      margin-top: 4px;
+      letter-spacing: 0.04em;
+    }
+
+    .cell-client {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--accent-gold-dark);
+      margin-top: 3px;
+      font-weight: 600;
+    }
+
+    /* 05. SKILLS & SPECS */
+    .specs-grid {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 60px 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+
+    .spec-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-card);
+      padding: 30px;
+      position: relative;
+      border-radius: 4px;
+      box-shadow: 0 4px 18px rgba(46, 47, 30, 0.05);
+    }
+
+    .spec-card-title {
+      font-family: var(--font-mono);
+      font-size: 0.84rem;
+      color: var(--primary-olive);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+    }
+
+    .spec-card-title::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--accent-gold);
+    }
+
+    .skill-item {
+      margin-bottom: 18px;
+    }
+
+    .skill-name-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.84rem;
+      margin-bottom: 6px;
+      font-family: var(--font-mono);
+      color: var(--text-body);
+      font-weight: 500;
+    }
+
+    .skill-bar {
+      height: 5px;
+      background: var(--bg-surface-warm);
+      border-radius: 3px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .skill-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-gold), var(--accent-sunset-gold));
+      border-radius: 3px;
+    }
+
+    .inventory-list {
+      list-style: none;
+    }
+
+    .inventory-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+    }
+
+    .inventory-list li strong {
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    .inventory-list li:last-child {
+      border-bottom: none;
+    }
+
+    .gear-status {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--accent-gold-dark);
+      background: rgba(168, 137, 94, 0.12);
+      border: 1px solid rgba(168, 137, 94, 0.35);
+      padding: 3px 8px;
+      border-radius: 2px;
+      font-weight: 600;
+    }
+
+    /* 06. DUAL TRACK: CORPORATE CX & OPERATIONS */
+    .corporate-track-section {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 60px 80px;
+    }
+
+    .corporate-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+      margin-top: 24px;
+    }
+
+    .corp-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-card);
+      padding: 28px;
+      position: relative;
+      transition: all 0.25s ease;
+      border-radius: 4px;
+      box-shadow: 0 4px 18px rgba(46, 47, 30, 0.05);
+    }
+
+    .corp-card:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(46, 47, 30, 0.1);
+    }
+
+    .corp-period {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent-gold-dark);
+      margin-bottom: 6px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+    }
+
+    .corp-company {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .corp-role {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .corp-bullets {
+      list-style: none;
+      font-size: 0.86rem;
+      color: var(--text-body);
+      line-height: 1.65;
+    }
+
+    .corp-bullets li {
+      margin-bottom: 10px;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .corp-bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent-gold);
+      font-size: 1.1rem;
+    }
+
+    /* 07. EDUCATION & FORMAL RECORD */
+    .education-section {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 60px 80px;
+    }
+
+    .edu-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-card);
+      padding: 34px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      border-radius: 4px;
+      box-shadow: 0 4px 18px rgba(46, 47, 30, 0.05);
+    }
+
+    .edu-institution {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--accent-gold-dark);
+      margin-bottom: 8px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+    }
+
+    .edu-details h3 {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .edu-notes {
+      font-size: 0.92rem;
+      color: var(--text-body);
+      max-width: 720px;
+      line-height: 1.65;
+    }
+
+    .edu-notes strong {
+      color: var(--primary-dark);
+    }
+
+    /* 08. CONTACT & CALL TO ACTION */
+    .contact-section {
+      background: var(--primary-olive);
+      color: var(--bg-ivory);
+      border-top: 3px solid var(--accent-gold);
+      padding: 100px 60px;
+      text-align: center;
+    }
+
+    .contact-container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .contact-section .hero-tag {
+      color: var(--accent-sunset-gold);
+      justify-content: center;
+    }
+
+    .contact-section .hero-tag::before {
+      background: var(--accent-sunset-gold);
+    }
+
+    .contact-heading {
+      font-family: var(--font-serif);
+      font-size: 3.5rem;
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      color: var(--bg-ivory);
+      margin-bottom: 16px;
+    }
+
+    .contact-sub {
+      color: var(--neutral-warm-beige);
+      font-size: 1.08rem;
+      margin-bottom: 40px;
+      font-weight: 300;
+      line-height: 1.75;
+    }
+
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .contact-actions .btn-action {
+      color: var(--bg-ivory);
+      border-color: rgba(248, 245, 236, 0.4);
+    }
+
+    .contact-actions .btn-action:hover {
+      background: var(--accent-gold);
+      border-color: var(--accent-gold);
+      color: #FFFFFF;
+    }
+
+    .contact-actions .btn-gold {
+      background: var(--accent-gold);
+      color: #FFFFFF;
+      border-color: var(--accent-gold);
+    }
+
+    .contact-actions .btn-gold:hover {
+      background: var(--bg-ivory);
+      color: var(--primary-olive);
+      border-color: var(--bg-ivory);
+    }
+
+    .contact-meta-row {
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--neutral-warm-beige);
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(248, 245, 236, 0.15);
+      padding-top: 30px;
+    }
+
+    .contact-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contact-meta-item a {
+      color: var(--accent-sunset-gold);
+      text-decoration: none;
+    }
+
+    .contact-meta-item a:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 32px 60px;
+      border-top: 1px solid rgba(46, 47, 30, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      background: #181912;
+      color: var(--neutral-warm-beige);
+    }
+
+    /* PRINT DOSSIER MEDIA STYLING */
+    @media print {
+      header, .film-grain, .filter-bar, .contact-actions, footer, .modal-backdrop {
+        display: none !important;
+      }
+      body {
+        background: #FFFFFF !important;
+        color: #100B0B !important;
+      }
+      .hero-section {
+        padding: 20px 0 !important;
+        min-height: auto !important;
+      }
+      .section-header {
+        padding: 30px 0 10px !important;
+      }
+      .film-strip-wrapper {
+        box-shadow: none !important;
+      }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 968px) {
+      .hero-section {
+        flex-direction: column;
+        padding: 90px 24px 40px;
+      }
+      .hero-title {
+        font-size: 2.8rem;
+      }
+      .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      header {
+        padding: 0 20px;
+      }
+      nav {
+        display: none;
+      }
+      .section-header, .contact-sheet-section, .specs-grid, .corporate-track-section, .education-section {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      .modal-body {
+        grid-template-columns: 1fr;
+        padding: 24px;
+      }
+      footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="film-grain"></div>
+
+  <!-- NAVIGATION -->
+  <header>
+    <a href="#hero" class="brand-wrap">
+      <div class="brand-logo-svg" title="WECLIK Monogram">
+        <!-- SVG Vector Monogram from weclik_logo -->
+        <svg viewBox="0 0 500 500" width="100%" height="100%">
+          <g transform="translate(0, 45)">
+            <text x="290" y="240" font-family="'Playfair Display', serif" font-size="240" font-weight="400" fill="#2E2F1E" text-anchor="middle">C</text>
+            <text x="210" y="225" font-family="'Playfair Display', serif" font-size="240" font-weight="400" fill="#2E2F1E" text-anchor="middle">W</text>
+          </g>
+        </svg>
+      </div>
+      <div class="brand-text-block">
+        <div class="brand-title">
+          RISHAV RAJ
+          <span class="brand-domain-badge">weclik.in</span>
+        </div>
+        <div class="brand-tagline">WECLIK CO-FOUNDER • MUMBAI // PAN-INDIA</div>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#timeline">Timeline</a>
+      <a href="#projects">Selected Works</a>
+      <a href="#specs">Production Specs</a>
+      <a href="#corporate">CX &amp; Ops</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="https://weclik.in" target="_blank" class="btn-action" style="font-size: 0.72rem; padding: 6px 14px;">
+        weclik.in ↗
+      </a>
+      <a href="resume_editorial_print.html" target="_blank" class="btn-action" style="font-size: 0.72rem; padding: 6px 14px;" title="View Editorial A4 Print Dossier">
+        Print Dossier ↗
+      </a>
+      <button class="btn-action btn-gold" onclick="window.print()" title="Print or Save PDF Dossier">
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z"></path></svg>
+        PDF CV
+      </button>
+    </div>
+  </header>
+
+  <!-- 01. HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">CO-FOUNDER, WECLIK (weclik.in) • VISUAL STORYTELLER</div>
+      <h1 class="hero-title">Rishav Raj</h1>
+      <p class="hero-role">FASHION • LUXURY WEDDINGS • COMMERCIAL • INSTITUTIONAL DOCUMENTARY</p>
+      <p class="hero-bio">
+        Photographer and creative production professional based in <strong>Mumbai</strong>, with an 8+ year practice spanning luxury destination weddings, high-fashion editorials, commercial media production, and institutional exhibition documentation. Co-founded <strong>WECLIK</strong> in 2017, served as Head of Photography at Swaps Couture in Mumbai, documented Buddhist relics for the <strong>Ministry of Culture</strong> in 2026, and combines creative mastery with world-class operational discipline from global customer experience roles at <strong>Amazon</strong> and <strong>Airbnb</strong>.
+      </p>
+
+      <div class="hero-stats">
+        <div>
+          <div class="stat-number">8+</div>
+          <div class="stat-label">Years (2015–2026)</div>
+        </div>
+        <div>
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Weddings &amp; Shoots</div>
+        </div>
+        <div>
+          <div class="stat-number">WECLIK</div>
+          <div class="stat-label">Co-Founder (weclik.in)</div>
+        </div>
+        <div>
+          <div class="stat-number">Global CX</div>
+          <div class="stat-label">Amazon &amp; Airbnb Alumni</div>
+        </div>
+      </div>
+
+      <div class="hero-cta-row">
+        <a href="#timeline" class="btn-action btn-gold" style="padding: 12px 26px;">
+          Explore Film Strip Timeline ↓
+        </a>
+        <a href="#projects" class="btn-action" style="padding: 12px 24px;">
+          View Selected Works
+        </a>
+        <a href="mailto:connectwithrishav@gmail.com" class="btn-action" style="padding: 12px 24px;">
+          ✉ Connect Directly
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="film-frame-hero">
+        <div class="film-sprockets-side">
+          <div class="sprocket-hole"></div>
+          <div class="sprocket-hole"></div>
+          <div class="sprocket-hole"></div>
+          <div class="sprocket-hole"></div>
+          <div class="sprocket-hole"></div>
+          <div class="sprocket-hole"></div>
+        </div>
+        <div class="hero-image-wrap">
+          <img src="assets/rishav-portrait.jpg" onerror="this.onerror=null; this.src='assets/IMG_4703.jpg';" alt="Rishav Raj — Photographer &amp; Creative Director" />
+          <div class="hero-portrait-badge">RISHAV RAJ // MUMBAI 2026</div>
+        </div>
+        <div class="film-meta-bar">
+          <span>KODAK PORTRA 400</span>
+          <span>WECLIK ARCHIVE // 2026</span>
+          <span>MUMBAI, IN</span>
+        </div>
+        <div class="film-sprockets-side" style="margin-top: 12px; margin-bottom: 0;">
+          <div class="sprocket-hole"></div>
+          <div class="sprocket-hole"></div>
+          <div class="sprocket-hole"></div>
+          <div class="sprocket-hole"></div>
+          <div class="sprocket-hole"></div>
+          <div class="sprocket-hole"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02. FILM NEGATIVE TIMELINE CAROUSEL -->
+  <section id="timeline">
+    <div class="section-header">
+      <div class="section-title-wrap">
+        <h2><span class="section-index">02</span> The Career Timeline (2015 — 2026)</h2>
+        <div class="section-subtitle">CLICK ANY FRAME TO UNLOCK DETAILED CHAPTER, GEAR &amp; ARCHIVAL EVIDENCE</div>
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-amber);">
+        ← DRAG OR SCROLL HORIZONTALLY (RIGHT CLICK FULLY ENABLED) →
+      </div>
+    </div>
+
+    <div class="timeline-container">
+      <div class="film-strip-wrapper">
+        <!-- Top Sprocket Strip -->
+        <div class="sprocket-rail">
+          <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+          <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+          <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+          <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+          <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+        </div>
+
+        <!-- The Film Strip Track -->
+        <div class="film-track" id="filmTrack">
+
+          <!-- Frame 001 -->
+          <div class="film-frame-card" onclick="openChapter('ch1')">
+            <div class="frame-header">
+              <span>FRAME 001</span>
+              <span>PATNA</span>
+            </div>
+            <div class="frame-thumb">
+              <span class="frame-badge-role">Foundations &amp; Mentorship</span>
+              <img src="assets/camera-gear.jpg" alt="Origins &amp; Camera Gear">
+            </div>
+            <div class="frame-content">
+              <div>
+                <div class="frame-year">2015 · Patna</div>
+                <h3 class="frame-heading">Origins &amp; Mass Comm</h3>
+                <p class="frame-desc">Enrolled in BJMC at St. Xavier's College under Prof. Frank Krishner. Experimented with long exposures at Patna Junction and acquired first Nikon D5500 DSLR.</p>
+              </div>
+              <div class="frame-footer">
+                <span>ST. XAVIER'S / FRANK KRISHNER</span>
+                <span>INSPECT ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frame 002 -->
+          <div class="film-frame-card" onclick="openChapter('ch2')">
+            <div class="frame-header">
+              <span>FRAME 002</span>
+              <span>PATNA</span>
+            </div>
+            <div class="frame-thumb">
+              <span class="frame-badge-role">Apprentice to Lead Shooter</span>
+              <img src="assets/portfolio/weddings_main/weddings_main_1.jpg" alt="MEOW Studio &amp; Weddings">
+            </div>
+            <div class="frame-content">
+              <div>
+                <div class="frame-year">2015 — 2017 · Patna</div>
+                <h3 class="frame-heading">Learning at MEOW Studio</h3>
+                <p class="frame-desc">Collaborated with Saurabh Banuraj. Began with the Amayra book launch, progressing from lighting assistant to second shooter and lead wedding photographer by June 2016.</p>
+              </div>
+              <div class="frame-footer">
+                <span>MEOW STUDIO / WEDDING LEAD</span>
+                <span>INSPECT ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frame 003 -->
+          <div class="film-frame-card" onclick="openChapter('ch3')">
+            <div class="frame-header">
+              <span>FRAME 003</span>
+              <span>PATNA &amp; REGIONAL</span>
+            </div>
+            <div class="frame-thumb">
+              <span class="frame-badge-role">Portraits &amp; Fashion</span>
+              <img src="assets/portfolio/retro_rachna/retro_rachna_1.jpg" alt="Portraits &amp; Fashion">
+            </div>
+            <div class="frame-content">
+              <div>
+                <div class="frame-year">2015 — 2017 · Patna</div>
+                <h3 class="frame-heading">Portraits &amp; Street Practice</h3>
+                <p class="frame-desc">Photographed creative community, models, musicians, and college events including NIFT Patna Spectrum 2017 and engagement documentation.</p>
+              </div>
+              <div class="frame-footer">
+                <span>NIFT PATNA / PORTRAITS</span>
+                <span>INSPECT ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frame 004 -->
+          <div class="film-frame-card" onclick="openChapter('ch4')">
+            <div class="frame-header">
+              <span>FRAME 004</span>
+              <span>FOUNDED 26 JUN 2017</span>
+            </div>
+            <div class="frame-thumb">
+              <span class="frame-badge-role">Co-Founder &amp; Creative Lead</span>
+              <img src="assets/portfolio/weddings_main/weddings_main_3.jpg" onerror="this.onerror=null; this.src='assets/wegroup.png';" alt="WECLIK Co-Founding">
+            </div>
+            <div class="frame-content">
+              <div>
+                <div class="frame-year">2017 — 2019 · Patna / Pan-India</div>
+                <h3 class="frame-heading">Building WECLIK (weclik.in)</h3>
+                <p class="frame-desc">Co-founded WECLIK on 26 June 2017 with Aman Singh Thakur &amp; Kamal Nayan. Scaled brand identity, client acquisition, and delivery workflows for luxury weddings.</p>
+              </div>
+              <div class="frame-footer">
+                <span>WECLIK PILLAR / WE GROUP</span>
+                <span>INSPECT ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frame 005 -->
+          <div class="film-frame-card" onclick="openChapter('ch5')">
+            <div class="frame-header">
+              <span>FRAME 005</span>
+              <span>DESTINATIONS</span>
+            </div>
+            <div class="frame-thumb">
+              <span class="frame-badge-role">Destination Weddings</span>
+              <img src="assets/portfolio/pre_weddings_main/pre_weddings_main_1.jpg" alt="Destination Work">
+            </div>
+            <div class="frame-content">
+              <div>
+                <div class="frame-year">2017 — 2020 · Multi-City</div>
+                <h3 class="frame-heading">Destination &amp; Studio Collabs</h3>
+                <p class="frame-desc">Covered weddings across Gokarna, Kurukshetra, Rishikesh, Delhi, Jaipur, Varanasi. Partnered with Photovale, Wedding Moments, Crystal Eye, and RC Films.</p>
+              </div>
+              <div class="frame-footer">
+                <span>GOKARNA / RISHIKESH / JAIPUR</span>
+                <span>INSPECT ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frame 006 -->
+          <div class="film-frame-card" onclick="openChapter('ch6')">
+            <div class="frame-header">
+              <span>FRAME 006</span>
+              <span>KAIMUR, BIHAR</span>
+            </div>
+            <div class="frame-thumb">
+              <span class="frame-badge-role">Documentary Photographer</span>
+              <img src="assets/portfolio/pre_weddings_main/pre_weddings_main_3.jpg" alt="Kaimur Landscape Documentary">
+            </div>
+            <div class="frame-content">
+              <div>
+                <div class="frame-year">COVID Era · Kaimur</div>
+                <h3 class="frame-heading">Kaimur: The Land of Demons</h3>
+                <p class="frame-desc">Commissioned for a 30-day tourism coffee-table book by the district administration after sunrise documentation. Landscape and cultural storytelling in remote terrain.</p>
+              </div>
+              <div class="frame-footer">
+                <span>GOVT. TOURISM BOOK</span>
+                <span>INSPECT ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frame 007 -->
+          <div class="film-frame-card" onclick="openChapter('ch7')">
+            <div class="frame-header">
+              <span>FRAME 007</span>
+              <span>MUMBAI</span>
+            </div>
+            <div class="frame-thumb">
+              <span class="frame-badge-role">Head of Photography</span>
+              <img src="assets/portfolio/neeli_nazakat/neeli_nazakat_1.jpg" alt="Swaps Couture — Neeli Nazakat">
+            </div>
+            <div class="frame-content">
+              <div>
+                <div class="frame-year">Jan — Apr 2021 · Mumbai</div>
+                <h3 class="frame-heading">Mumbai &amp; Swaps Couture</h3>
+                <p class="frame-desc">Head of Photography at Swaps Couture. Executed 'Neeli Nazakat' campaign with Swapnila Mishra &amp; Alia Khan. Documented costume stills for web-series with HYDOZ on set in Satara.</p>
+              </div>
+              <div class="frame-footer">
+                <span>SWAPS COUTURE / HYDOZ</span>
+                <span>INSPECT ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frame 008 -->
+          <div class="film-frame-card" onclick="openChapter('ch8')">
+            <div class="frame-header">
+              <span>FRAME 008</span>
+              <span>PATNA &amp; MUMBAI</span>
+            </div>
+            <div class="frame-thumb">
+              <span class="frame-badge-role">Commercial Director</span>
+              <img src="assets/portfolio/radhika_silks/radhika_silks_1.jpg" alt="Crave Hermit &amp; Radhika Silk">
+            </div>
+            <div class="frame-content">
+              <div>
+                <div class="frame-year">2021 — 2023 · Multiple Hubs</div>
+                <h3 class="frame-heading">Commercial Media &amp; Crave Hermit</h3>
+                <p class="frame-desc">Branded media with Crave Hermit Production (Rishabh Jaiswal). Product shoots, chroma green-screen, Radhika Silk Bhagalpur Saree campaign, and Kishwa campaign in Mumbai.</p>
+              </div>
+              <div class="frame-footer">
+                <span>RADHIKA SILK / CRAVE HERMIT</span>
+                <span>INSPECT ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frame 009 -->
+          <div class="film-frame-card" onclick="openChapter('ch9')">
+            <div class="frame-header">
+              <span>FRAME 009</span>
+              <span>AMAZON &amp; AIRBNB</span>
+            </div>
+            <div class="frame-thumb">
+              <span class="frame-badge-role">Customer Experience Lead</span>
+              <img src="assets/portfolio/commercial_stills/commercial_stills_1.png" alt="Amazon &amp; Airbnb Operations Track">
+            </div>
+            <div class="frame-content">
+              <div>
+                <div class="frame-year">2023 — 2026 · Corporate Track</div>
+                <h3 class="frame-heading">Global Operations: Amazon &amp; Airbnb</h3>
+                <p class="frame-desc">Contractual CX specialist supporting Amazon UK, APAC &amp; Japan, and Airbnb at Teleperformance. Managed high-volume resolutions, FCR, and CRM while maintaining creative production.</p>
+              </div>
+              <div class="frame-footer">
+                <span>AMAZON / AIRBNB / TELEPERFORMANCE</span>
+                <span>INSPECT ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frame 010 -->
+          <div class="film-frame-card" onclick="openChapter('ch10')">
+            <div class="frame-header">
+              <span>FRAME 010</span>
+              <span>NEW DELHI</span>
+            </div>
+            <div class="frame-thumb">
+              <span class="frame-badge-role">Institutional Documentation</span>
+              <img src="assets/portfolio/sarwan_silk/sarwan_silk_1.jpg" alt="The Light and the Lotus">
+            </div>
+            <div class="frame-content">
+              <div>
+                <div class="frame-year">2026 · Malviya Nagar, Delhi</div>
+                <h3 class="frame-heading">The Light and the Lotus</h3>
+                <p class="frame-desc">Documented exhibition of Buddhist relics returned to India. Photographed international delegates and dignitaries with 2-hour formal reporting cycles to the Ministry of Culture.</p>
+              </div>
+              <div class="frame-footer">
+                <span>MINISTRY OF CULTURE</span>
+                <span>INSPECT ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frame 011 -->
+          <div class="film-frame-card" onclick="openChapter('ch11')">
+            <div class="frame-header">
+              <span>FRAME 011</span>
+              <span>MUMBAI &amp; PUNE</span>
+            </div>
+            <div class="frame-thumb">
+              <span class="frame-badge-role">Creative Director</span>
+              <img src="assets/portfolio/pragya_singh/pragya_singh_1.jpg" alt="Mumbai Contemporary Practice">
+            </div>
+            <div class="frame-content">
+              <div>
+                <div class="frame-year">OCT 2026 — PRESENT · Mumbai</div>
+                <h3 class="frame-heading">Mumbai, Again // Contemporary</h3>
+                <p class="frame-desc">Returned to Mumbai active from 3 October 2026 following Pune shoot. Full creative practice: high-fashion lookbooks, WECLIK luxury weddings, and cinematic commercial commissions.</p>
+              </div>
+              <div class="frame-footer">
+                <span>MUMBAI PRACTICE / ACTIVE</span>
+                <span>INSPECT ↗</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Sprocket Strip -->
+        <div class="sprocket-rail bottom">
+          <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+          <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+          <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+          <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+          <div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04. SELECTED PROJECTS / CONTACT SHEET GALLERY -->
+  <section class="contact-sheet-section" id="projects">
+    <div class="section-header" style="padding-left: 0; padding-right: 0;">
+      <div class="section-title-wrap">
+        <h2><span class="section-index">03</span> Selected Works &amp; Contact Sheets</h2>
+        <div class="section-subtitle">ARCHIVE OF COUTURE CAMPAIGNS, WECLIK WEDDINGS, DOCUMENTARY &amp; INSTITUTIONAL ASSIGNMENTS</div>
+      </div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterGallery('all', this)">All Works (12)</button>
+      <button class="filter-btn" onclick="filterGallery('fashion', this)">Fashion &amp; Couture</button>
+      <button class="filter-btn" onclick="filterGallery('weddings', this)">WECLIK Luxury Weddings</button>
+      <button class="filter-btn" onclick="filterGallery('documentary', this)">Documentary &amp; Institutional</button>
+      <button class="filter-btn" onclick="filterGallery('commercial', this)">Commercial / Media</button>
+    </div>
+
+        <!-- Contact Sheet Grid -->
+    <div class="contact-sheet-grid" id="galleryGrid">
+
+      <!-- 1. Neeli Nazakat -->
+      <div class="contact-cell" data-category="fashion">
+        <div class="cell-film-label">
+          <span>FRAME 08A</span>
+          <span>SWAPS COUTURE · MUMBAI</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/neeli_nazakat/neeli_nazakat_1.jpg" alt="Neeli Nazakat Couture Campaign">
+        </div>
+        <div class="cell-title">Neeli Nazakat — Couture Campaign</div>
+        <div class="cell-tag">High-Fashion / Blue Lehenga Lookbook</div>
+        <div class="cell-client">Swaps Couture · Swapnila Mishra &amp; Alia Khan</div>
+      </div>
+
+      <!-- 2. Radhika Silk -->
+      <div class="contact-cell" data-category="fashion">
+        <div class="cell-film-label">
+          <span>FRAME 12A</span>
+          <span>BHAGALPUR BRAND</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/radhika_silks/radhika_silks_1.jpg" alt="Radhika Silk Heritage Saree">
+        </div>
+        <div class="cell-title">Radhika Silk — Heritage Saree Campaign</div>
+        <div class="cell-tag">Brand Campaign feat. Model Parineeta Singh</div>
+        <div class="cell-client">Radhika Silk Brand · Co-Photographer Ankit Kumar</div>
+      </div>
+
+      <!-- 3. Priyanka & Shantanu -->
+      <div class="contact-cell" data-category="weddings">
+        <div class="cell-film-label">
+          <span>FRAME 14A</span>
+          <span>WECLIK ARCHIVE</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/priyanka_shantanu/priyanka_shantanu_1.jpg" alt="Priyanka & Shantanu Luxury Wedding">
+        </div>
+        <div class="cell-title">Priyanka &amp; Shantanu — Royal Vows</div>
+        <div class="cell-tag">Signature Luxury Wedding Story</div>
+        <div class="cell-client">WECLIK Luxury Wedding Archive</div>
+      </div>
+
+      <!-- 4. AZ by AZORTE / Reliance -->
+      <div class="contact-cell" data-category="commercial">
+        <div class="cell-film-label">
+          <span>FRAME 16A</span>
+          <span>RELIANCE INDIA LTD</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/azorte_reliance/azorte_reliance_1.png" alt="Kashish x AZ by AZORTE">
+        </div>
+        <div class="cell-title">Kashish x AZ by AZORTE Campaign</div>
+        <div class="cell-tag">Commercial Apparel Stills &amp; Pacing</div>
+        <div class="cell-client">Reliance India Ltd · AZORTE Brand</div>
+      </div>
+
+      <!-- 5. Retro Rachna -->
+      <div class="contact-cell" data-category="fashion">
+        <div class="cell-film-label">
+          <span>FRAME 18A</span>
+          <span>STUDIO EDITORIAL</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/retro_rachna/retro_rachna_1.jpg" alt="Retro Rachna Editorial Portraits">
+        </div>
+        <div class="cell-title">Retro Rachna — Fashion Lookbook</div>
+        <div class="cell-tag">Editorial Studio Lighting &amp; Contrast</div>
+        <div class="cell-client">Fashion Portraits &amp; Look-Test Series</div>
+      </div>
+
+      <!-- 6. Somy & Amit -->
+      <div class="contact-cell" data-category="weddings">
+        <div class="cell-film-label">
+          <span>FRAME 20A</span>
+          <span>WECLIK SIGNATURE</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/somy_amit/somy_amit_1.jpg" alt="Somy & Amit Destination Wedding">
+        </div>
+        <div class="cell-title">Somy &amp; Amit — Heritage Celebration</div>
+        <div class="cell-tag">Luxury Destination Wedding</div>
+        <div class="cell-client">WECLIK Destination Wedding Archive</div>
+      </div>
+
+      <!-- 7. Pragya Singh Rajput -->
+      <div class="contact-cell" data-category="fashion">
+        <div class="cell-film-label">
+          <span>FRAME 22A</span>
+          <span>MUMBAI LOOKTEST</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/pragya_singh/pragya_singh_1.jpg" alt="Pragya Singh Rajput High-Fashion">
+        </div>
+        <div class="cell-title">Pragya Singh Rajput — High Fashion</div>
+        <div class="cell-tag">Actor Portfolio &amp; Casting Series</div>
+        <div class="cell-client">Mumbai Casting &amp; Agency Look-Test</div>
+      </div>
+
+      <!-- 8. Ankita & Rishabh -->
+      <div class="contact-cell" data-category="weddings">
+        <div class="cell-film-label">
+          <span>FRAME 24A</span>
+          <span>WECLIK CEREMONY</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/ankita_rishabh/ankita_rishabh_1.jpg" alt="Ankita & Rishabh Wedding">
+        </div>
+        <div class="cell-title">Ankita &amp; Rishabh — Golden Vows</div>
+        <div class="cell-tag">Traditional &amp; Candid Wedding Coverage</div>
+        <div class="cell-client">WECLIK Wedding Collective</div>
+      </div>
+
+      <!-- 9. Kaushiki w/ Sarwan Silk -->
+      <div class="contact-cell" data-category="fashion">
+        <div class="cell-film-label">
+          <span>FRAME 26A</span>
+          <span>SARWAN SILK</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/sarwan_silk/sarwan_silk_1.jpg" alt="Kaushiki w/ Sarwan Silk">
+        </div>
+        <div class="cell-title">Kaushiki w/ Sarwan Silk — Couture Saree</div>
+        <div class="cell-tag">Traditional Loom &amp; Modern Silhouette</div>
+        <div class="cell-client">Sarwan Silk Couture Campaign</div>
+      </div>
+
+      <!-- 10. Bhawana & Raj -->
+      <div class="contact-cell" data-category="weddings">
+        <div class="cell-film-label">
+          <span>FRAME 28A</span>
+          <span>PRE-WEDDING ARCHIVE</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/bhawana_raj/bhawana_raj_1.jpg" alt="Bhawana & Raj Pre-Wedding">
+        </div>
+        <div class="cell-title">Bhawana &amp; Raj — Scenic Pre-Wedding</div>
+        <div class="cell-tag">Destination Landscape &amp; Candid Chemistry</div>
+        <div class="cell-client">WECLIK Pre-Wedding Collection</div>
+      </div>
+
+      <!-- 11. Bliss Moments -->
+      <div class="contact-cell" data-category="weddings">
+        <div class="cell-film-label">
+          <span>FRAME 30A</span>
+          <span>WECLIK CANDIDS</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/bliss_moments/bliss_moments_3.jpg" alt="Bliss Wedding Candids">
+        </div>
+        <div class="cell-title">Bliss — Emotional Candid Rituals</div>
+        <div class="cell-tag">Unfiltered Tears, Joy &amp; Heritage Pacing</div>
+        <div class="cell-client">WECLIK Candid Emotional Wedding Archive</div>
+      </div>
+
+      <!-- 12. Ankita & Ankit -->
+      <div class="contact-cell" data-category="weddings">
+        <div class="cell-film-label">
+          <span>FRAME 32A</span>
+          <span>WECLIK ARCHIVE</span>
+        </div>
+        <div class="cell-media">
+          <img src="assets/portfolio/ankita_ankit/ankita_ankit_1.jpg" alt="Ankita & Ankit Wedding">
+        </div>
+        <div class="cell-title">Ankita &amp; Ankit — Regal Union</div>
+        <div class="cell-tag">Full Ceremony &amp; Grand Reception</div>
+        <div class="cell-client">WECLIK Wedding Collective</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 05. TECHNICAL KIT & PRODUCTION SPECS -->
+  <section id="specs">
+    <div class="section-header">
+      <div class="section-title-wrap">
+        <h2><span class="section-index">04</span> Production Skills, Gear &amp; Software</h2>
+        <div class="section-subtitle">DEMONSTRATED COMPETENCIES AND VERIFIED HARDWARE/SOFTWARE INVENTORY</div>
+      </div>
+    </div>
+
+    <div class="specs-grid">
+
+      <!-- Skills Card -->
+      <div class="spec-card">
+        <div class="spec-card-title">Photography &amp; Creative Direction</div>
+
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span>Strobe &amp; Directional Studio Lighting</span>
+            <span style="color: var(--accent-amber);">96%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 96%;"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span>Luxury Wedding Candid Storytelling</span>
+            <span style="color: var(--accent-amber);">98%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 98%;"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span>Fashion &amp; Couture Editorial Direction</span>
+            <span style="color: var(--accent-amber);">92%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span>Documentary Field &amp; Institutional Protocol</span>
+            <span style="color: var(--accent-amber);">94%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span>Commercial Chroma &amp; Product Stills</span>
+            <span style="color: var(--accent-amber);">88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+        </div>
+      </div>
+
+      <!-- Equipment Inventory -->
+      <div class="spec-card">
+        <div class="spec-card-title">Verified Equipment Inventory</div>
+        <ul class="inventory-list">
+          <li>
+            <div>
+              <strong>Nikon Z-Series Mirrorless / Z6 III</strong>
+              <div style="font-size: 0.72rem; color: var(--text-dim);">Flagship hybrid system (4K 120p / 6K RAW &amp; high-res stills)</div>
+            </div>
+            <span class="gear-status">Primary System</span>
+          </li>
+          <li>
+            <div>
+              <strong>Nikon D810 Full-Frame DSLR</strong>
+              <div style="font-size: 0.72rem; color: var(--text-dim);">Commercial &amp; Swaps Couture high-dynamic range workhorse</div>
+            </div>
+            <span class="gear-status">Commercial Body</span>
+          </li>
+          <li>
+            <div>
+              <strong>Nikon D5500 DSLR</strong>
+              <div style="font-size: 0.72rem; color: var(--text-dim);">Early career craft foundation &amp; traditional wedding body</div>
+            </div>
+            <span class="gear-status">Historical Body</span>
+          </li>
+          <li>
+            <div>
+              <strong>Godox AD200 Pro + V1 Flash</strong>
+              <div style="font-size: 0.72rem; color: var(--text-dim);">TTL/HSS portable lighting for editorial &amp; ballrooms</div>
+            </div>
+            <span class="gear-status">Lighting Kit</span>
+          </li>
+          <li>
+            <div>
+              <strong>120 cm Deep Parabolic Octabox + Grids</strong>
+              <div style="font-size: 0.72rem; color: var(--text-dim);">Signature couture soft modifier used on Neeli Nazakat</div>
+            </div>
+            <span class="gear-status">Modifier</span>
+          </li>
+          <li>
+            <div>
+              <strong>Apple MacBook Pro M1 Pro (16GB RAM)</strong>
+              <div style="font-size: 0.72rem; color: var(--text-dim);">On-set live tethering &amp; dual-slot RAID redundant backup</div>
+            </div>
+            <span class="gear-status">Workstation</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Software Suite -->
+      <div class="spec-card">
+        <div class="spec-card-title">Software &amp; Post-Production</div>
+        <ul class="inventory-list">
+          <li>
+            <div>
+              <strong>Adobe Photoshop CC &amp; ACR</strong>
+              <div style="font-size: 0.72rem; color: var(--text-dim);">Frequency separation, beauty retouching, compositing</div>
+            </div>
+            <span class="gear-status">Mastery</span>
+          </li>
+          <li>
+            <div>
+              <strong>Adobe Lightroom Classic</strong>
+              <div style="font-size: 0.72rem; color: var(--text-dim);">High-volume wedding cataloging &amp; signature color grading</div>
+            </div>
+            <span class="gear-status">Mastery</span>
+          </li>
+          <li>
+            <div>
+              <strong>DaVinci Resolve Studio</strong>
+              <div style="font-size: 0.72rem; color: var(--text-dim);">Node-based color grading (N-Log / C-Log pipelines)</div>
+            </div>
+            <span class="gear-status">Advanced</span>
+          </li>
+          <li>
+            <div>
+              <strong>Adobe Premiere Pro</strong>
+              <div style="font-size: 0.72rem; color: var(--text-dim);">Timeline pacing, reel deliverables &amp; commercial cuts</div>
+            </div>
+            <span class="gear-status">Advanced</span>
+          </li>
+          <li>
+            <div>
+              <strong>Enterprise CRM &amp; Workflow Tools</strong>
+              <div style="font-size: 0.72rem; color: var(--text-dim);">Zendesk, Salesforce, Amazon ticketing &amp; resolution engines</div>
+            </div>
+            <span class="gear-status">Mastery</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 06. DUAL TRACK: INTERNATIONAL CX & OPERATIONS -->
+  <section class="corporate-track-section" id="corporate">
+    <div class="section-header" style="padding-left: 0; padding-right: 0;">
+      <div class="section-title-wrap">
+        <h2><span class="section-index">05</span> Global Operations &amp; Customer Experience</h2>
+        <div class="section-subtitle">BALANCING WORLD-CLASS CORPORATE RESOLUTION DISCIPLINE WITH CREATIVE PRODUCTION</div>
+      </div>
+    </div>
+
+    <div class="corporate-grid">
+
+      <!-- Amazon Japan -->
+      <div class="corp-card">
+        <div class="corp-period">SEPT 2025 — FEB 2026</div>
+        <div class="corp-company">Amazon</div>
+        <div class="corp-role">Customer Support Associate (Contractual) · Japan Market</div>
+        <ul class="corp-bullets">
+          <li>Delivered real-time phone and chat support for complex order, logistics, refund, and payment escalations.</li>
+          <li>Consistently maintained top-tier First-Contact Resolution (FCR) and Customer Satisfaction (CSAT) during peak holiday seasons.</li>
+          <li>Interfaced with fulfillment centers to resolve mission-critical logistics bottlenecks under tight SLAs.</li>
+        </ul>
+      </div>
+
+      <!-- Airbnb Teleperformance -->
+      <div class="corp-card">
+        <div class="corp-period">JUNE 2024 — DEC 2024</div>
+        <div class="corp-company">Airbnb, Teleperformance India</div>
+        <div class="corp-role">Resolution 1 Support Ambassador (Contractual)</div>
+        <ul class="corp-bullets">
+          <li>Primary point of contact for international Airbnb guests and hosts regarding booking, payment, and emergency safety concerns.</li>
+          <li>Delivered empathy-driven conflict resolution aligned with Airbnb's rigorous global hospitality standards.</li>
+          <li>Trained in Teleperformance "Client Handling Essentials" certification (2024).</li>
+        </ul>
+      </div>
+
+      <!-- Amazon UK/APAC -->
+      <div class="corp-card">
+        <div class="corp-period">SEPT 2023 — MAR 2024</div>
+        <div class="corp-company">Amazon</div>
+        <div class="corp-role">Virtual Customer Support Associate · UK &amp; APAC Region</div>
+        <ul class="corp-bullets">
+          <li>Provided high-volume remote customer resolution for UK and APAC retail customers.</li>
+          <li>Achieved quality and efficiency KPIs in fast-paced omnichannel ticketing queues.</li>
+          <li>Demonstrated exceptional cross-cultural communication that reinforces client trust on high-value creative productions.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 07. EDUCATION & CREDENTIALS -->
+  <section class="education-section" id="education">
+    <div class="section-header" style="padding-left: 0; padding-right: 0;">
+      <div class="section-title-wrap">
+        <h2><span class="section-index">06</span> Formal Education &amp; Credentials</h2>
+        <div class="section-subtitle">ACADEMIC FOUNDATION IN MASS MEDIA, TELEVISION PRODUCTION &amp; COMMUNICATION</div>
+      </div>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-details">
+        <div class="edu-institution">ST. XAVIER'S COLLEGE OF MANAGEMENT AND TECHNOLOGY, PATNA</div>
+        <h3>Bachelor of Mass Communication (BJMC)</h3>
+        <p class="edu-notes">
+          Three-year degree covering photography fundamentals, television production, media ethics, visual journalism, and communication theory. Mentored by renowned educator <strong>Prof. Frank Krishner</strong>, developing darkroom disciplines, compositional geometry, and narrative ethics.
+        </p>
+      </div>
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 1.1rem; color: var(--accent-amber); font-weight: 700;">2015 — 2018</div>
+        <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase;">Patna, Bihar</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08. CONTACT & CONNECT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div class="hero-tag" style="justify-content: center; margin-bottom: 12px;">MUMBAI HEADQUARTERS · PAN-INDIA COMMISSIONS</div>
+      <h2 class="contact-heading">LET'S CREATE SOMETHING TIMELESS.</h2>
+      <p class="contact-sub">
+        Available for fashion lookbooks, celebrity portfolios, commercial brand campaigns, and WECLIK luxury wedding bookings across Mumbai, Delhi, and global destinations.
+      </p>
+
+      <div class="contact-actions">
+        <a href="mailto:connectwithrishav@gmail.com" class="btn-action btn-gold" style="padding: 13px 30px;">
+          ✉ connectwithrishav@gmail.com
+        </a>
+        <a href="tel:+919934230034" class="btn-action" style="padding: 13px 28px;">
+          📞 +91 99342 30034
+        </a>
+        <a href="https://weclik.in" target="_blank" class="btn-action" style="padding: 13px 28px; border-color: var(--accent-amber);">
+          🌐 weclik.in
+        </a>
+        <a href="resume_editorial_print.html" target="_blank" class="btn-action" style="padding: 13px 26px;">
+          📄 Editorial Print Dossier ↗
+        </a>
+        <button onclick="window.print()" class="btn-action" style="padding: 13px 26px;">
+          ⬇ Download PDF CV
+        </button>
+      </div>
+
+      <div class="contact-meta-row">
+        <div class="contact-meta-item">
+          <span>Direct Email:</span>
+          <a href="mailto:connectwithrishav@gmail.com">connectwithrishav@gmail.com</a>
+        </div>
+        <div class="contact-meta-item">
+          <span>Mobile:</span>
+          <a href="tel:+919934230034">+91 99342 30034</a>
+        </div>
+        <div class="contact-meta-item">
+          <span>Brand Agency:</span>
+          <a href="https://weclik.in" target="_blank">weclik.in</a>
+        </div>
+        <div class="contact-meta-item">
+          <span>Instagram:</span>
+          <a href="https://instagram.com/rishavrawvisuals" target="_blank">@rishavrawvisuals</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>© 2026 RISHAV RAJ — CO-FOUNDER, WECLIK (weclik.in)</div>
+    <div>THE FILM-NEGATIVE RESUME • CRAFTED FOR MUMBAI CREATIVE COMMISSIONS</div>
+    <div>RIGHT CLICK FULLY ENABLED • NIKON Z-SERIES &amp; 35MM ARCHIVE</div>
+  </footer>
+
+  <!-- CHAPTER DETAIL MODAL -->
+  <div class="modal-backdrop" id="chapterModal" onclick="closeChapterOnBackdrop(event)">
+    <div class="modal-window">
+      <div class="modal-header-film">
+        <span id="modalHeaderFrame">FRAME 001 // CHAPTER INSPECTION</span>
+        <button class="modal-close-btn" onclick="closeChapter()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <h2 class="modal-title" id="modalTitle">Chapter Title</h2>
+          <div class="modal-subtitle" id="modalRole">Role &amp; Timeframe</div>
+          <p class="modal-text" id="modalDesc">Detailed description here.</p>
+
+          <div class="modal-section-title">Key Responsibilities &amp; Learnings</div>
+          <ul class="modal-list" id="modalLearnings"></ul>
+
+          <div class="modal-section-title">Verified Equipment &amp; Workflow</div>
+          <div class="gear-pills" id="modalGear"></div>
+        </div>
+
+        <div>
+          <div class="modal-section-title">Archival &amp; Contact Sheet Evidence</div>
+          <div class="modal-gallery-preview" id="modalGallery"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 11 Complete Archival Chapters from Rishav Raj's First-Person Career Journey (2015-2026)
+    const chapters = {
+      ch1: {
+        frame: "FRAME 001 // 2015",
+        title: "Origins & University Foundations",
+        role: "Mass Communication Student & Emerging Photographer · Patna",
+        desc: "Began serious exploration of photography in 2015 while studying for a Bachelor of Journalism and Mass Communication at St. Xavier's College of Management and Technology in Patna. Under the guidance of Prof. Frank Krishner, mastered fundamentals of visual composition, television production, slow shutter speeds, and street photography around Patna Junction. Acquired a Nikon D5500 DSLR to formalize technical knowledge in flash and aperture control.",
+        learnings: [
+          "Television and visual production fundamentals mentored by Prof. Frank Krishner.",
+          "Experimental long exposure and motion-blur street photography across Patna Junction.",
+          "Foundations of DSLR exposure triangle and initial speedlight experimentation.",
+          "Visual storytelling discipline rooted in journalistic integrity and ethics."
+        ],
+        gear: ["Nikon D5500", "Sony Xperia L", "18-55mm Kit Lens", "Speedlight", "Adobe Photoshop CC"],
+        images: [
+          "assets/camera-gear.jpg",
+          "assets/portfolio/commercial_stills/commercial_stills_1.png"
+        ]
+      },
+      ch2: {
+        frame: "FRAME 002 // 2015 — 2017",
+        title: "Apprenticeship at MEOW Studio",
+        role: "Light Assistant ➔ Second Shooter ➔ Lead Wedding Photographer · Patna",
+        desc: "Met Saurabh Banuraj (founder of MEOW Studio) through Sanchit. First recalled live assignment was the November 2015 book launch of Amayra. Progressed rapidly from on-set lighting assistant and gear discipline to second shooter during the March–April 2016 wedding season. By June 2016, achieved full competency as a lead wedding photographer navigating high-pressure live ceremonies.",
+        learnings: [
+          "Mastery of lighting modifiers, light stands, strobe sync, and on-set safety.",
+          "Live event second-shooting, candid capture, and traditional ceremony documentation.",
+          "Rapid progression to lead wedding shooter commanding shot lists and family pacing.",
+          "Disciplined RAW image offloading and early Adobe Camera Raw color workflows."
+        ],
+        gear: ["Nikon D5500", "35mm Prime", "50mm f/1.8", "Off-Camera Flash", "Adobe Camera Raw"],
+        images: [
+          "assets/portfolio/weddings_main/weddings_main_1.jpg",
+          "assets/portfolio/weddings_main/weddings_main_4.jpg"
+        ]
+      },
+      ch3: {
+        frame: "FRAME 003 // 2015 — 2017",
+        title: "Portraits, Street & Creative Collaborations",
+        role: "Portraiture & Cultural Event Specialist · Patna & Regional",
+        desc: "Alongside commercial wedding work, built an extensive creative portfolio collaborating with models, musicians, and artists across Bihar. Photographed high-profile cultural events including Spectrum (the annual cultural festival at NIFT Patna in March 2017) and milestone engagements such as Pooja & Vikas in Fatuha.",
+        learnings: [
+          "Creative collaboration with models, musicians, and designers on location.",
+          "Event coverage of large-scale fashion runways and conclaves (NIFT Patna Spectrum).",
+          "Developing empathetic model direction and natural posing cues.",
+          "Fine-tuning skin tone rendering in mixed ambient and daylight environments."
+        ],
+        gear: ["Nikon D5500", "85mm f/1.8", "50mm Prime", "Reflectors & Diffusers", "Lightroom Classic"],
+        images: [
+          "assets/portfolio/retro_rachna/retro_rachna_1.jpg",
+          "assets/portfolio/retro_rachna/retro_rachna_3.jpg"
+        ]
+      },
+      ch4: {
+        frame: "FRAME 004 // JUN 2017 — 2019",
+        title: "Co-Founding WECLIK (weclik.in)",
+        role: "Co-Founder & Creative Lead · Patna & Pan-India",
+        desc: "Co-founded WECLIK on 26 June 2017 with partners Aman Singh Thakur and Kamal Nayan, later joined by Akash Bharti and Deepak Tiwari. Built the luxury wedding brand from the ground up, establishing its visual identity, premium packaging, client acquisition system, and post-production standards. Stepped up to lead operations in 2018–2019, scaling the business to over 20+ luxury weddings and maternity projects per year.",
+        learnings: [
+          "Brand development and luxury wedding market positioning for WECLIK (weclik.in).",
+          "Directing complete multi-camera crews: lead candids, cinematographers, and assistants.",
+          "Client onboarding, customized rate-card negotiation, and contract execution.",
+          "Establishing consistent color grade LUTs and dual-backup data safety protocols."
+        ],
+        gear: ["Full-Frame DSLRs", "Fast Zooms 24-70mm f/2.8", "Godox Wireless System", "Dual-Card Backup"],
+        images: [
+          "assets/wegroup.png",
+          "assets/portfolio/weddings_main/weddings_main_3.jpg"
+        ]
+      },
+      ch5: {
+        frame: "FRAME 005 // 2017 — 2020",
+        title: "Destination Weddings & Studio Network",
+        role: "Lead Destination Photographer & Studio Collaborator",
+        desc: "Expanded scope across major Indian destinations including Gokarna, Kurukshetra, Rishikesh, Delhi, Jaipur, Varanasi, and Ranchi. Guest-shot and partnered with top production entities including Photovale Studio (Yuvraj Kumar), Dream Arts, Wedding Moments Studio, Crystal Eye (Asif Iqbal Sheikh), Sunil Photography Bodh Gaya, and RC Films. On 1 January 2020, captured milestone pre-wedding and wedding frames for Ruchi & Shubham.",
+        learnings: [
+          "Managing unpredictable natural elements on destination beaches (Gokarna) and riversides (Rishikesh).",
+          "Seamless creative adaptability when guest-shooting for established regional studios.",
+          "End-to-end multi-day destination wedding timelines and VIP guest coverage.",
+          "Rapid turnaround of same-day edit teasers for wedding couple presentations."
+        ],
+        gear: ["Nikon D810", "24-70mm f/2.8", "70-200mm f/2.8", "Godox AD200 Pro", "Capture One"],
+        images: [
+          "assets/portfolio/pre_weddings_main/pre_weddings_main_1.jpg",
+          "assets/portfolio/priyanka_shantanu/priyanka_shantanu_1.jpg"
+        ]
+      },
+      ch6: {
+        frame: "FRAME 006 // COVID ERA (2020)",
+        title: "Kaimur: The Land of Demons",
+        role: "Documentary Field Photographer · Kaimur, Bihar",
+        desc: "During the COVID period, collaborated with Wedding Moments Studio on documentation assignments in Kaimur. An early morning sunrise series caught the attention of the district administration, leading to a prestigious commission for a tourism coffee-table book titled 'Kaimur: The Land of Demons.' Spent approximately 30 days living in circuit houses and traversing valleys, waterfalls, and hills to produce an authoritative visual survey.",
+        learnings: [
+          "Rigorous field documentary discipline in remote forest, waterfall, and hill terrain.",
+          "Landscape, sunrise, and natural light exposure bracketing for print publishing.",
+          "Liaising directly with government and district administrative leadership.",
+          "Curating long-form visual narratives suited for high-end coffee-table print books."
+        ],
+        gear: ["Nikon D810", "Ultra-Wide Lenses", "Neutral Density Filters", "Carbon Fiber Tripod", "Photoshop"],
+        images: [
+          "assets/portfolio/pre_weddings_main/pre_weddings_main_3.jpg",
+          "assets/portfolio/pre_weddings_main/pre_weddings_main_4.jpg"
+        ]
+      },
+      ch7: {
+        frame: "FRAME 007 // JAN — APR 2021",
+        title: "Mumbai & Swaps Couture",
+        role: "Head of Photography · Mumbai, Pune & Satara",
+        desc: "Relocated to Mumbai in January 2021 as Head of Photography at Swaps Couture with designer Swapnila Mishra. Directed high-fashion lookbooks, model portfolios, and collection reels. Landmark work included the acclaimed 'Neeli Nazakat' blue lehenga campaign featuring Dubai-based MUA Alia Khan. Later joined the production set of a web-series in Pune and Satara with costume partner HYDOZ for unit stills.",
+        learnings: [
+          "Direction of high-fashion campaigns, model posing, and styling coordination.",
+          "Advanced strobe lighting using Godox AD200 Pro and 120cm deep parabolic octabox.",
+          "First-hand film-set etiquette, silent shutter discipline, and costume documentation.",
+          "High-end frequency separation and fabric texture retention in Photoshop."
+        ],
+        gear: ["Nikon D810", "Godox AD200 Pro", "120 cm Deep Parabolic Octabox", "85mm Portrait Glass", "MacBook Pro"],
+        images: [
+          "assets/portfolio/neeli_nazakat/neeli_nazakat_1.jpg",
+          "assets/portfolio/neeli_nazakat/neeli_nazakat_3.jpg"
+        ]
+      },
+      ch8: {
+        frame: "FRAME 008 // 2021 — 2023",
+        title: "Commercial Media & Crave Hermit",
+        role: "Commercial Photographer & Content Producer · Multi-City",
+        desc: "Partnered extensively with Crave Hermit Production (founder Rishabh Jaiswal) delivering commercial branding, product catalogs, advertising copy, and green-screen chroma production. Shot the Radhika Silk heritage saree campaign in Bhagalpur with model Parineeta Singh, co-photographer Ankit Kumar, and cinematographer Shubham Mishra. Collaborated on celebrity portraits including television actress Neha Marda and the Kishwa Mumbai campaign.",
+        learnings: [
+          "Studio chroma green-screen lighting, isolation, and post-production keying.",
+          "Commercial product photography with controlled specular reflections.",
+          "Saree and textile advertising production preserving accurate dye hues.",
+          "Directing multi-disciplinary crews across photography, video, and styling."
+        ],
+        gear: ["Nikon D810", "Studio Strobes", "Godox V1", "Prime Lenses", "DaVinci Resolve & Photoshop"],
+        images: [
+          "assets/portfolio/radhika_silks/radhika_silks_1.jpg",
+          "assets/portfolio/radhika_silks/radhika_silks_3.jpg"
+        ]
+      },
+      ch9: {
+        frame: "FRAME 009 // 2023 — 2026",
+        title: "Global Operations: Amazon & Airbnb",
+        role: "Contractual Customer Support Associate & Ambassador",
+        desc: "Integrated international corporate excellence into professional practice alongside creative commissions. Contractual customer experience specialist supporting Amazon UK, APAC, and Japan markets, and Resolution 1 Ambassador for Airbnb via Teleperformance India. Handled complex logistics, safety escalations, and cross-border host/guest communications with flawless FCR and CSAT metrics.",
+        learnings: [
+          "World-class conflict de-escalation, active listening, and empathetic customer handling.",
+          "High-volume CRM workflows across Amazon internal tools, Salesforce, and Zendesk.",
+          "Strict adherence to data privacy, turnaround SLAs, and operational compliance.",
+          "Transferable enterprise discipline ensuring reliable client contracts on commercial shoots."
+        ],
+        gear: ["Omnichannel Voice & Chat Platforms", "CRM Tools", "Teleperformance Certification (2024)"],
+        images: [
+          "assets/camera-gear.jpg",
+          "assets/portfolio/azorte_reliance/azorte_reliance_1.png"
+        ]
+      },
+      ch10: {
+        frame: "FRAME 010 // 2026",
+        title: "The Light and the Lotus",
+        role: "Lead Exhibition Documenter · Malviya Nagar, New Delhi",
+        desc: "Commissioned for an intensive one-month contract documenting 'The Light and the Lotus: Relics of the Awakened One'—a landmark cultural exhibition featuring Buddhist relics returned to India from abroad. Photographed international delegates, Buddhist monks, VIPs, and foreign visitors, adhering to a rigorous protocol of submitting photographic intelligence reports to the Ministry of Culture at 2-hour intervals.",
+        learnings: [
+          "High-security diplomatic protocol and respectful documentation of sacred relics.",
+          "Strict 2-hour reporting and submission deadlines directly to the Ministry of Culture.",
+          "Balancing discrete presence with comprehensive visitor and dignitary coverage.",
+          "Delivering structured archival metadata and captioning for institutional records."
+        ],
+        gear: ["Full-Frame Mirrorless Kit", "35mm f/1.4", "85mm f/1.8", "Discrete Ambient Setup", "Lightroom Mobile"],
+        images: [
+          "assets/portfolio/sarwan_silk/sarwan_silk_1.jpg",
+          "assets/portfolio/sarwan_silk/sarwan_silk_3.jpg"
+        ]
+      },
+      ch11: {
+        frame: "FRAME 011 // OCT 2026 — PRESENT",
+        title: "Mumbai, Again // Contemporary Practice",
+        role: "Creative Director & Lead Visual Storyteller · Mumbai & Pan-India",
+        desc: "Following a childhood friend's destination pre-wedding shoot in Pune, returned to Mumbai on 1 October 2026, fully available for professional commissions from 3 October 2026. Armed with 8+ years of expertise across couture, documentary, commercial media, and WECLIK luxury weddings, now executing hybrid 4K cinematography, fashion lookbooks, and high-stakes commercial campaigns across Bandra, Lower Parel, and beyond.",
+        learnings: [
+          "Operating modern mirrorless Nikon Z-series architecture with prime S-Line glass.",
+          "Hybrid cinematography: simultaneous high-res stills and 4K 10-bit cinema lookbooks.",
+          "Commercial pitching for Mumbai fashion houses, OTT production stills, and luxury events.",
+          "Mentoring emerging associate shooters under the WECLIK banner."
+        ],
+        gear: ["Nikon Z6 III / Z-Series Kit", "NIKKOR Z 35mm f/1.4", "NIKKOR Z 85mm f/1.8 S", "Godox V1", "DaVinci Resolve Studio"],
+        images: [
+          "assets/portfolio/pragya_singh/pragya_singh_1.jpg",
+          "assets/portfolio/neeli_nazakat/neeli_nazakat_4.jpg"
+        ]
+      }
+    };
+
+    function openChapter(id) {
+      const data = chapters[id];
+      if (!data) return;
+
+      document.getElementById('modalHeaderFrame').innerText = data.frame + " // DETAILED INSPECTION";
+      document.getElementById('modalTitle').innerText = data.title;
+      document.getElementById('modalRole').innerText = data.role;
+      document.getElementById('modalDesc').innerText = data.desc;
+
+      // Learnings list
+      const listEl = document.getElementById('modalLearnings');
+      listEl.innerHTML = '';
+      data.learnings.forEach(item => {
+        const li = document.createElement('li');
+        li.innerText = item;
+        listEl.appendChild(li);
+      });
+
+      // Gear pills
+      const gearEl = document.getElementById('modalGear');
+      gearEl.innerHTML = '';
+      data.gear.forEach(g => {
+        const span = document.createElement('span');
+        span.className = 'gear-pill';
+        span.innerText = g;
+        gearEl.appendChild(span);
+      });
+
+      // Gallery preview
+      const gallEl = document.getElementById('modalGallery');
+      gallEl.innerHTML = '';
+      data.images.forEach(imgUrl => {
+        const img = document.createElement('img');
+        img.src = imgUrl;
+        img.alt = data.title;
+        gallEl.appendChild(img);
+      });
+
+      document.getElementById('chapterModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeChapter() {
+      document.getElementById('chapterModal').classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    function closeChapterOnBackdrop(e) {
+      if (e.target.id === 'chapterModal') {
+        closeChapter();
+      }
+    }
+
+    // Filter Selected Works
+    function filterGallery(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cells = document.querySelectorAll('.contact-cell');
+      cells.forEach(cell => {
+        if (category === 'all' || cell.getAttribute('data-category') === category) {
+          cell.style.display = 'block';
+        } else {
+          cell.style.display = 'none';
+        }
+      });
+    }
+
+    // Smooth horizontal dragging for the film track
+    // (Explicitly checking e.button === 0 ensures right click is never intercepted)
+    const track = document.getElementById('filmTrack');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    track.addEventListener('mousedown', (e) => {
+      // ONLY respond to primary left click (button 0). Allow right-click (button 2) without interference!
+      if (e.button !== 0) return;
+      isDown = true;
+      startX = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+
+    track.addEventListener('mouseleave', () => { isDown = false; });
+    track.addEventListener('mouseup', () => { isDown = false; });
+
+    track.addEventListener('mousemove', (e) => {
+      if(!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - track.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      track.scrollLeft = scrollLeft - walk;
+    });
+
+    // Native contextmenu (right-click) is completely enabled and celebrated across the entire portfolio
+    window.addEventListener('contextmenu', (e) => {
+      // Do nothing to prevent it - native browser menu appears freely!
+    });
+  </script>
+</body>
+</html>
