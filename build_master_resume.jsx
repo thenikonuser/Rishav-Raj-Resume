@@ -1,6 +1,7 @@
 // ==============================================================================
-// Adobe InDesign ExtendScript: "THE FILM NEGATIVE RESUME" - MASTER EDITION (v2)
-// Designed for Rishav Raj — Photographer & Creative Director, Mumbai
+// Adobe InDesign ExtendScript: "THE FILM NEGATIVE RESUME" - MASTER AI EDITION
+// Designed for Rishav Raj — Photographer, Creative Director & AI-Augmented Producer
+// Compatible with Adobe InDesign 2026 / CC
 // ==============================================================================
 
 #target indesign
@@ -62,7 +63,7 @@ function buildMasterFilmResume() {
     var assetsDir = "/Users/test/Desktop/MUMBAI/rishav-raj-portfolio/assets";
 
     // ==========================================================================
-    // PAGE 1: HEADER, NEW PORTRAIT, 35MM FILM REEL STRIP & BALANCED CAREER TIMELINE
+    // PAGE 1: HEADER, PORTRAIT, 35MM FILM REEL STRIP & AI-AUGMENTED CAREER TIMELINE
     // ==========================================================================
     var page1 = doc.pages.item(0);
 
@@ -71,11 +72,11 @@ function buildMasterFilmResume() {
     bg1.fillColor = colMatteBlack;
     bg1.strokeWeight = 0;
 
-    // Header Left: Identity & Position
+    // Header Left: Identity & AI-Integrated Title
     var headerText = page1.textFrames.add();
-    headerText.geometricBounds = [16, 18, 48, 148];
+    headerText.geometricBounds = [15, 18, 50, 148];
     headerText.textFramePreferences.autoSizingType = AutoSizingTypeEnum.OFF;
-    headerText.contents = "RISHAV RAJ\nCREATIVE DIRECTOR & VISUAL STORYTELLER\nFASHION • LUXURY WEDDINGS • COMMERCIAL CINEMA\n35MM CINEMATIC ARCHIVE • MUMBAI, INDIA • WECLIK (weclik.in)";
+    headerText.contents = "RISHAV RAJ\nCREATIVE DIRECTOR & VISUAL STORYTELLER\nCOMMERCIAL ADVERTISING • LUXURY WEDDINGS • AI-AUGMENTED PRODUCTION\n35MM CINEMATIC ARCHIVE • MUMBAI, INDIA • WECLIK (weclik.in)";
     try {
         for (var h = 0; h < headerText.paragraphs.length; h++) {
             headerText.paragraphs[h].hyphenation = false;
@@ -84,9 +85,9 @@ function buildMasterFilmResume() {
         headerText.paragraphs[0].fillColor = colIvory;
         safeFont(headerText.paragraphs[0], fontHeadline);
         headerText.paragraphs[0].tracking = 70;
-        headerText.paragraphs[0].leading = 30;
+        headerText.paragraphs[0].leading = 29;
 
-        headerText.paragraphs[1].pointSize = 10;
+        headerText.paragraphs[1].pointSize = 9.5;
         headerText.paragraphs[1].fillColor = colAmber;
         safeFont(headerText.paragraphs[1], fontSubhead);
         headerText.paragraphs[1].tracking = 100;
@@ -95,7 +96,7 @@ function buildMasterFilmResume() {
         headerText.paragraphs[2].pointSize = 7.5;
         headerText.paragraphs[2].fillColor = colIvory;
         safeFont(headerText.paragraphs[2], fontMeta);
-        headerText.paragraphs[2].tracking = 90;
+        headerText.paragraphs[2].tracking = 85;
         headerText.paragraphs[2].leading = 11;
 
         headerText.paragraphs[3].pointSize = 7;
@@ -185,19 +186,19 @@ function buildMasterFilmResume() {
             file: assetsDir + "/portfolio/retro_rachna/retro_rachna_1.jpg",
             tag: "FRAME 001 // 2017",
             title: "Retro Rachna",
-            desc: "Editorial Lookbook & Strobe Contrast"
+            desc: "Studio Lighting & Raw Emulsion Foundations"
         },
         {
             file: assetsDir + "/portfolio/neeli_nazakat/neeli_nazakat_1.jpg",
             tag: "FRAME 002 // 2021",
             title: "Neeli Nazakat",
-            desc: "SWASS Couture & Fabric Texture Retention"
+            desc: "SWASS Couture • AI Set & Fabric Retention"
         },
         {
             file: assetsDir + "/portfolio/bhawana_raj/bhawana_raj_1.jpg",
             tag: "FRAME 003 // 2026",
             title: "WECLIK Weddings",
-            desc: "Cinematic Luxury Heritage & Film Grading"
+            desc: "Bespoke Cinema • Evoto AI Batch Grading"
         }
     ];
 
@@ -242,11 +243,11 @@ function buildMasterFilmResume() {
     }
 
     // --------------------------------------------------------------------------
-    // Section 2: Career Chapters & Milestones (2 Separate Balanced Columns)
+    // Section 2: Career Chapters & AI-Integrated Milestones (2 Balanced Columns)
     // --------------------------------------------------------------------------
     var timelineHeading = page1.textFrames.add();
     timelineHeading.geometricBounds = [145, 18, 152, 192];
-    timelineHeading.contents = "02 // CAREER CHAPTERS & PRODUCTION MILESTONES";
+    timelineHeading.contents = "02 // CAREER TIMELINE & AI INTEGRATION (2015 — 2026)";
     try {
         timelineHeading.paragraphs[0].pointSize = 9.5;
         timelineHeading.paragraphs[0].fillColor = colAmber;
@@ -255,10 +256,10 @@ function buildMasterFilmResume() {
         timelineHeading.paragraphs[0].hyphenation = false;
     } catch(e) {}
 
-    // Column 1 (Frames 001 - 003)
+    // Column 1 (Frames 001 - 003: Foundational Era to Commercial Growth)
     var col1Left = 18;
-    var col1Right = 100;
-    var col2Left = 110;
+    var col1Right = 101;
+    var col2Left = 109;
     var col2Right = 192;
     var timeTop = 154;
     var timeBot = 282;
@@ -267,22 +268,22 @@ function buildMasterFilmResume() {
     col1Text.geometricBounds = [timeTop, col1Left, timeBot, col1Right];
     col1Text.contents = 
         "FRAME 001: MEOW STUDIO (Oct 2015)\n" +
-        "Light Assistant. Mastered lighting physics, studio strobes, continuous lighting, parabolic modifiers, and raw digital negative curation under commercial deadlines.\n\n" +
+        "Light Assistant. Mastered lighting physics, parabolic modifiers, optical falloff, color temperature, and strict studio digital negative asset handling protocols.\n\n" +
         "FRAME 002: INDEPENDENT WEDDINGS (Jan 2016)\n" +
-        "Traditional & Candid Lead. Delivered natural skin-tone rendition in challenging ambient lighting across landmark multi-day regional weddings.\n\n" +
-        "FRAME 003: WECLIK — CO-FOUNDER (Jun 2017)\n" +
-        "Creative Director. Co-founded WECLIK (weclik.in), scaling from boutique weddings to 20+ multi-day luxury weddings annually with bespoke cinematography.";
+        "Lead Traditional & Candid Photographer. Perfected candid documentary timing, authentic skin tones under erratic ambient lighting, and high-volume event curation.\n\n" +
+        "FRAME 003: WECLIK — BUILDING SCALE (Jun 2017–2021)\n" +
+        "Co-Founder & Creative Lead. Scaled WECLIK (weclik.in) from regional weddings to 20+ multi-day luxury weddings annually with cinematic film grading and studio teams.";
 
-    // Column 2 (Frames 004 - 006)
+    // Column 2 (Frames 004 - 006: Mainstream AI, Scripting, Automation & Direction)
     var col2Text = page1.textFrames.add();
     col2Text.geometricBounds = [timeTop, col2Left, timeBot, col2Right];
     col2Text.contents = 
-        "FRAME 004: EDITORIAL & BRAND COLLABS (2018–2020)\n" +
-        "Partnered with leading photo studios and textile brands across eastern India. Specialized in bridal couture lookbooks, jewellery macros, and brand campaigns.\n\n" +
-        "FRAME 005: MUMBAI — FASHION & OTT STILLS (Jan 2021)\n" +
-        "Relocated to Mumbai. Directed campaigns for SWASS Couture, Crave Hermit, model agency portfolios in Bandra/Versova, and cinema production stills.\n\n" +
-        "FRAME 006: FLAGSHIP PRACTICE & 6K CINEMA (Present)\n" +
-        "Nikon Z6 III flagship kit. Seamless dual-delivery: high-resolution advertising stills and 4K 10-bit cinematic video graded in DaVinci Resolve Studio.";
+        "FRAME 004: ADOBE CC AI & EVOTO ADOPTION (2022–2023)\n" +
+        "Early adopter of Adobe Firefly & Photoshop Generative Fill for commercial set extensions and backdrop synthesis. Integrated Evoto AI for batch frequency separation, facial landmark refinement, and AI masking across massive 1000+ photo deliveries.\n\n" +
+        "FRAME 005: AI AD COPYWRITING & PRE-LIGHTING (2024)\n" +
+        "Used ChatGPT & Google Gemini as creative writing collaborators for commercial ad copies (e.g. craft beer brand expansion campaign from Goa to Bombay). Integrated 3D virtual lighting software to simulate studio diagrams, lighting ratios, and modifiers before arriving on set.\n\n" +
+        "FRAME 006: BESPOKE STUDIO SOFTWARE & HYBRID DIRECTION (2025–2026)\n" +
+        "Engineered custom Python RAW-matching software using Google Antigravity & DeepSeek to automate client album selections from terabytes of archives. Explored generative video (Sora/Runway) for B-roll animatics alongside flagship Nikon Z6 III 6K RAW cinema production.";
 
     function styleTimelineColumn(tf) {
         for (var p = 0; p < tf.paragraphs.length; p++) {
@@ -292,13 +293,13 @@ function buildMasterFilmResume() {
                 para.pointSize = 8;
                 para.fillColor = colAmber;
                 safeFont(para, fontSubhead);
-                para.spaceBefore = "3.5mm";
+                para.spaceBefore = "3.2mm";
                 para.spaceAfter = "1mm";
             } else {
-                para.pointSize = 7.3;
+                para.pointSize = 7.1;
                 para.fillColor = colIvory;
                 safeFont(para, fontBody);
-                para.leading = 11;
+                para.leading = 10.6;
             }
         }
     }
@@ -320,7 +321,7 @@ function buildMasterFilmResume() {
 
 
     // ==========================================================================
-    // PAGE 2: TECHNICAL ARSENAL, COMMERCIAL CLIENTS & BRAND ARCHITECTURE
+    // PAGE 2: HARDWARE ARSENAL, AI & COMPUTATIONAL SUITE & BRAND COMMISSIONS
     // ==========================================================================
     var page2 = doc.pages.item(1);
 
@@ -331,7 +332,7 @@ function buildMasterFilmResume() {
 
     var head2 = page2.textFrames.add();
     head2.geometricBounds = [16, 18, 25, 192];
-    head2.contents = "03 // PRODUCTION CAPABILITIES & TECHNICAL ARSENAL";
+    head2.contents = "03 // PRODUCTION ARSENAL & AI COMPUTATIONAL WORKFLOW";
     try {
         head2.paragraphs[0].pointSize = 9.5;
         head2.paragraphs[0].fillColor = colAmber;
@@ -340,10 +341,11 @@ function buildMasterFilmResume() {
         head2.paragraphs[0].hyphenation = false;
     } catch(e) {}
 
-    // 3 Clean Cards
+    // 3 Cards: Hardware, AI Post/Retouching/3D, and AI Scripting/Engineering
     var colW = 54;
     var colGap = 6;
 
+    // Card 1: Camera & Optics
     var c1 = page2.textFrames.add();
     c1.geometricBounds = [28, 18, 142, 18 + colW];
     c1.contents = "CAMERA & OPTICS\n\n" +
@@ -355,36 +357,34 @@ function buildMasterFilmResume() {
         "  S-Line high-resolution beauty portraits\n\n" +
         "• NIKKOR Z 28–75mm f/2.8\n" +
         "  Runway, fast event zooms & commercial coverage\n\n" +
-        "• Dual System Backup\n" +
-        "  Nikon D810 / D5500 & high-speed CFexpress";
+        "• Godox V1 & AD200 Pro Strobes\n" +
+        "  Location lighting with wireless TTL & deep parabolics";
 
+    // Card 2: AI Retouching, 3D Pre-Lighting & Generative Vision
     var c2 = page2.textFrames.add();
     c2.geometricBounds = [28, 18 + colW + colGap, 142, 18 + (colW * 2) + colGap];
-    c2.contents = "LIGHTING & COLOR\n\n" +
-        "• Godox V1 Round-Head\n" +
-        "  Natural magnetic falloff & high-speed sync\n\n" +
-        "• Godox AD200 Pro Strobes\n" +
-        "  Bare-bulb location punch with wireless TTL\n\n" +
-        "• Parabolic Softboxes (120cm)\n" +
-        "  Directional wrap for couture & beauty campaigns\n\n" +
-        "• DaVinci Resolve Studio\n" +
-        "  ACES color management, film LUT emulations\n\n" +
-        "• Adobe Photoshop Classic\n" +
-        "  Frequency separation & authentic fabric retention";
+    c2.contents = "AI RETOUCHING & PRE-VIS\n\n" +
+        "• Evoto AI (Batch Retouching)\n" +
+        "  Automated frequency separation, skin-texture retention & smart facial masking\n\n" +
+        "• Adobe Firefly & Generative Fill\n" +
+        "  Rapid set extension, background reconstruction & conceptual ideation\n\n" +
+        "• 3D Virtual Studio Lighting\n" +
+        "  Full 3D diagramming of light placement, modifiers & camera angles before shoot day\n\n" +
+        "• Generative Video (Sora / Runway)\n" +
+        "  Exploring conceptual product animatics & B-roll";
 
+    // Card 3: AI Copywriting, Tool Engineering & LLMs
     var c3 = page2.textFrames.add();
     c3.geometricBounds = [28, 18 + ((colW + colGap) * 2), 142, 192];
-    c3.contents = "COMMERCIAL PORTFOLIO\n\n" +
-        "• 500+ Milestone Shoots\n" +
-        "  Luxury weddings, fashion campaigns & films\n\n" +
-        "• Reliance / Azorte\n" +
-        "  Commercial catalog & retail campaign media\n\n" +
-        "• SWASS Couture & Radhika\n" +
-        "  Heritage sarees & high-fashion lookbooks\n\n" +
-        "• Crave Hermit Production\n" +
-        "  Multi-city branded content & advertising\n\n" +
-        "• Talent Casting & OTT Stills\n" +
-        "  Versova & Bandra actor look-tests & key stills";
+    c3.contents = "AI SCRIPTING & CODE\n\n" +
+        "• Bespoke RAW Culling Tool\n" +
+        "  Built with Google Antigravity & DeepSeek to auto-match client JPEG picks to master RAWs\n\n" +
+        "• DeepSeek Open-Source LLMs\n" +
+        "  Local scripting, data processing, workflow automation & code architecture\n\n" +
+        "• ChatGPT & Google Gemini\n" +
+        "  Commercial ad copywriting, pitch treatments, and creative script doctoring\n\n" +
+        "• DaVinci Resolve Studio\n" +
+        "  AI Magic Mask, Neural Depth Map, ACES color";
 
     var cards = [c1, c2, c3];
     for (var k = 0; k < cards.length; k++) {
@@ -400,18 +400,18 @@ function buildMasterFilmResume() {
 
             for (var m = 1; m < cards[k].paragraphs.length; m++) {
                 var pLine = cards[k].paragraphs[m];
-                pLine.pointSize = 7.2;
+                pLine.pointSize = 7.1;
                 pLine.fillColor = colIvory;
                 safeFont(pLine, fontBody);
-                pLine.leading = 10.5;
+                pLine.leading = 10.3;
             }
         } catch(e) {}
     }
 
-    // Section 4: Brand Ecosystem
+    // Section 4: Brand Ecosystem & Commercial Production Case Studies
     var brandHeading = page2.textFrames.add();
     brandHeading.geometricBounds = [148, 18, 155, 192];
-    brandHeading.contents = "04 // BRAND ECOSYSTEM & DIRECT COMMISSIONS";
+    brandHeading.contents = "04 // BRAND ECOSYSTEM & COMMERCIAL COMMISSIONS";
     try {
         brandHeading.paragraphs[0].pointSize = 9.5;
         brandHeading.paragraphs[0].fillColor = colAmber;
@@ -421,19 +421,19 @@ function buildMasterFilmResume() {
     } catch(e) {}
 
     var banner = page2.rectangles.add();
-    banner.geometricBounds = [157, 18, 225, 192];
+    banner.geometricBounds = [157, 18, 226, 192];
     banner.fillColor = colCardBg;
     banner.strokeColor = colDarkGray;
     banner.strokeWeight = 0.75;
 
     var bannerText = page2.textFrames.add();
-    bannerText.geometricBounds = [161, 22, 221, 188];
+    bannerText.geometricBounds = [161, 22, 222, 188];
     bannerText.contents = 
-        "WE GROUP ARCHITECTURE\n\n" +
-        "• WECLIK (weclik.in) — Luxury wedding documentation, bespoke films & pre-wedding stories.\n" +
-        "• WELEAD GLOBAL — Fashion campaigns, advertising lookbooks, talent casting & commercial media.\n\n" +
-        "COMMISSIONING IN MUMBAI & GLOBALLY\n" +
-        "Available for high-value commercial assignments, fashion lookbooks, and luxury wedding films across Mumbai, Goa, Udaipur, and international destinations.\n\n" +
+        "WE GROUP ARCHITECTURE & AI PRODUCTION EDGE\n\n" +
+        "• WECLIK (weclik.in) — Luxury wedding cinematography, high-volume bespoke curation & heirloom photobooks.\n" +
+        "• WELEAD GLOBAL — Fashion campaigns, advertising lookbooks, talent casting & AI-augmented commercial productions.\n\n" +
+        "COMMERCIAL CASE STUDY & CAMPAIGN DIRECTION\n" +
+        "Craft Beer Goa-to-Bombay Expansion: Developed full advertising concept, using AI as an editorial critic to refine hooks, narrative tension, and regional tone. Delivered end-to-end commercial pitch and visual storyboard.\n\n" +
         "Interactive Digital Profile: https://resume.weclik.in • Portfolio: https://weclik.in\n" +
         "Direct Contact: connectwithrishav@gmail.com • +91 99342 30034";
 
@@ -441,16 +441,16 @@ function buildMasterFilmResume() {
         for (var bp = 0; bp < bannerText.paragraphs.length; bp++) {
             bannerText.paragraphs[bp].hyphenation = false;
         }
-        bannerText.paragraphs[0].pointSize = 9;
+        bannerText.paragraphs[0].pointSize = 8.8;
         bannerText.paragraphs[0].fillColor = colAmber;
         safeFont(bannerText.paragraphs[0], fontSubhead);
 
         for (var b = 1; b < bannerText.paragraphs.length; b++) {
             var bPara = bannerText.paragraphs[b];
-            bPara.pointSize = 7.4;
+            bPara.pointSize = 7.3;
             bPara.fillColor = colIvory;
             safeFont(bPara, fontBody);
-            bPara.leading = 11;
+            bPara.leading = 10.8;
         }
     } catch(e) {}
 
@@ -458,7 +458,7 @@ function buildMasterFilmResume() {
     var gearImgFile = new File(assetsDir + "/camera-gear.jpg");
     if (gearImgFile.exists) {
         var gPic = page2.rectangles.add();
-        gPic.geometricBounds = [230, 18, 280, 192];
+        gPic.geometricBounds = [231, 18, 280, 192];
         gPic.fillColor = colDarkGray;
         gPic.strokeColor = colAmber;
         gPic.strokeWeight = 0.5;
@@ -471,7 +471,7 @@ function buildMasterFilmResume() {
 
     var foot2 = page2.textFrames.add();
     foot2.geometricBounds = [285, 18, 292, 192];
-    foot2.contents = "PAGE 02 // TECHNICAL ARSENAL • DIRECT INQUIRIES: connectwithrishav@gmail.com";
+    foot2.contents = "PAGE 02 // PRODUCTION ARSENAL • DIRECT INQUIRIES: connectwithrishav@gmail.com";
     try {
         foot2.paragraphs[0].pointSize = 6.5;
         foot2.paragraphs[0].fillColor = colOlive;
@@ -496,7 +496,7 @@ function buildMasterFilmResume() {
     app.pngExportPreferences.pageString = "2";
     doc.exportFile(ExportFormat.PNG_FORMAT, new File("/Users/test/Desktop/MUMBAI/rishav-raj-portfolio/resume_preview_page2.png"));
 
-    return "Successfully generated Master Film Negative Resume PDF!";
+    return "Successfully generated Master AI Film Negative Resume PDF!";
 }
 
 buildMasterFilmResume();

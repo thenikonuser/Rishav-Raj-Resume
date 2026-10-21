@@ -1,3 +1,4 @@
 .DS_Store
 *.tmp
 inspect_*.jsx
+*.idlk
