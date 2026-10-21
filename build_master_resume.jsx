@@ -282,8 +282,8 @@ function buildMasterFilmResume() {
         "Early adopter of Adobe Firefly & Photoshop Generative Fill for commercial set extensions and backdrop synthesis. Integrated Evoto AI for batch frequency separation, facial landmark refinement, and AI masking across massive 1000+ photo deliveries.\n\n" +
         "FRAME 005: AI AD COPYWRITING & PRE-LIGHTING (2024)\n" +
         "Used ChatGPT & Google Gemini as creative writing collaborators for commercial ad copies (e.g. craft beer brand expansion campaign from Goa to Bombay). Integrated 3D virtual lighting software to simulate studio diagrams, lighting ratios, and modifiers before arriving on set.\n\n" +
-        "FRAME 006: BESPOKE STUDIO SOFTWARE & HYBRID DIRECTION (2025–2026)\n" +
-        "Engineered custom Python RAW-matching software using Google Antigravity & DeepSeek to automate client album selections from terabytes of archives. Explored generative video (Sora/Runway) for B-roll animatics alongside flagship Nikon Z6 III 6K RAW cinema production.";
+        "FRAME 006: BESPOKE AI TOOLS & HYBRID DIRECTION (2025–2026)\n" +
+        "Engineered custom Python RAW-matching software using Google Antigravity & DeepSeek to auto-sort terabytes of archives. Built an autonomous outreach engine using Gemini API to draft hyper-personalized pitches and route genre-specific portfolio links to couture brands, models, and SMBs.";
 
     function styleTimelineColumn(tf) {
         for (var p = 0; p < tf.paragraphs.length; p++) {
@@ -379,10 +379,10 @@ function buildMasterFilmResume() {
     c3.contents = "AI SCRIPTING & CODE\n\n" +
         "• Bespoke RAW Culling Tool\n" +
         "  Built with Google Antigravity & DeepSeek to auto-match client JPEG picks to master RAWs\n\n" +
-        "• DeepSeek Open-Source LLMs\n" +
-        "  Local scripting, data processing, workflow automation & code architecture\n\n" +
-        "• ChatGPT & Google Gemini\n" +
-        "  Commercial ad copywriting, pitch treatments, and creative script doctoring\n\n" +
+        "• Gemini API Outreach Engine\n" +
+        "  Automated client acquisition drafting custom pitches & routing genre-specific portfolios\n\n" +
+        "• DeepSeek & ChatGPT\n" +
+        "  Commercial ad copywriting, open-source LLM code architecture & script doctoring\n\n" +
         "• DaVinci Resolve Studio\n" +
         "  AI Magic Mask, Neural Depth Map, ACES color";
 
