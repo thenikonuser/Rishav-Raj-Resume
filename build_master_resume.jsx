@@ -76,7 +76,7 @@ function buildMasterFilmResume() {
     var headerText = page1.textFrames.add();
     headerText.geometricBounds = [15, 18, 50, 148];
     headerText.textFramePreferences.autoSizingType = AutoSizingTypeEnum.OFF;
-    headerText.contents = "RISHAV RAJ\nCREATIVE DIRECTOR & VISUAL STORYTELLER\nCOMMERCIAL ADVERTISING • LUXURY WEDDINGS • AI-AUGMENTED PRODUCTION\n35MM CINEMATIC ARCHIVE • MUMBAI, INDIA • WECLIK (weclik.in)";
+    headerText.contents = "RISHAV RAJ\nCREATIVE DIRECTOR & TALENT PRODUCER\nWE GROUP (WECLIK • WELEAD GLOBAL) • AI-AUGMENTED PRODUCTION\n35MM CINEMATIC ARCHIVE • MUMBAI, INDIA • weclik.in • weleadglobal.in";
     try {
         for (var h = 0; h < headerText.paragraphs.length; h++) {
             headerText.paragraphs[h].hyphenation = false;
@@ -282,8 +282,8 @@ function buildMasterFilmResume() {
         "Early adopter of Adobe Firefly & Photoshop Generative Fill for commercial set extensions and backdrop synthesis. Integrated Evoto AI for batch frequency separation, facial landmark refinement, and AI masking across massive 1000+ photo deliveries.\n\n" +
         "FRAME 005: AI AD COPYWRITING & PRE-LIGHTING (2024)\n" +
         "Used ChatGPT & Google Gemini as creative writing collaborators for commercial ad copies (e.g. craft beer brand expansion campaign from Goa to Bombay). Integrated 3D virtual lighting software to simulate studio diagrams, lighting ratios, and modifiers before arriving on set.\n\n" +
-        "FRAME 006: BESPOKE AI TOOLS & HYBRID DIRECTION (2025–2026)\n" +
-        "Engineered custom Python RAW-matching software using Google Antigravity & DeepSeek to auto-sort terabytes of archives. Built an autonomous outreach engine using Gemini API to draft hyper-personalized pitches and route genre-specific portfolio links to couture brands, models, and SMBs.";
+        "FRAME 006: WELEAD GLOBAL & BESPOKE AI PIPELINES (2024–2026)\n" +
+        "Founded talent management agency WeLead (weleadglobal.in) under WE Group, inspired by INEGA, scaling 58+ models, actors, and creatives. Engineered custom Python RAW sorting & Gemini API outreach engines to automate talent onboarding and commercial pitching in Mumbai.";
 
     function styleTimelineColumn(tf) {
         for (var p = 0; p < tf.paragraphs.length; p++) {
@@ -429,12 +429,12 @@ function buildMasterFilmResume() {
     var bannerText = page2.textFrames.add();
     bannerText.geometricBounds = [161, 22, 222, 188];
     bannerText.contents = 
-        "WE GROUP ARCHITECTURE & AI PRODUCTION EDGE\n\n" +
-        "• WECLIK (weclik.in) — Luxury wedding cinematography, high-volume bespoke curation & heirloom photobooks.\n" +
-        "• WELEAD GLOBAL — Fashion campaigns, advertising lookbooks, talent casting & AI-augmented commercial productions.\n\n" +
+        "WE GROUP OF COMPANIES (weclik.in • weleadglobal.in)\n\n" +
+        "• WECLIK (weclik.in) — Co-Founder. Luxury wedding cinematography, high-volume bespoke curation & heirloom photobooks.\n" +
+        "• WELEAD (weleadglobal.in) — Founder. Talent management & casting agency modeled after INEGA; 58+ active enrollments across models, actors, HMUAs, dancers, singers, and commercial photographers.\n\n" +
         "COMMERCIAL CASE STUDY & CAMPAIGN DIRECTION\n" +
         "Craft Beer Goa-to-Bombay Expansion: Developed full advertising concept, using AI as an editorial critic to refine hooks, narrative tension, and regional tone. Delivered end-to-end commercial pitch and visual storyboard.\n\n" +
-        "Interactive Digital Profile: https://resume.weclik.in • Portfolio: https://weclik.in\n" +
+        "Digital Profiles: https://resume.weclik.in • https://weclik.in • https://weleadglobal.in\n" +
         "Direct Contact: connectwithrishav@gmail.com • +91 99342 30034";
 
     try {
